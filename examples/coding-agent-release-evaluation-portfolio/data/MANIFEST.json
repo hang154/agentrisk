@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "files": {
+    "data/cells.csv": "87eb24cbf15988b1311ddcceee415234c60b3d47cebb6bc895932ad416e8d777",
+    "data/native_cells.csv": "300f958101c49c82d0274aca7e7958a578847dc8da3252e48e8112151abdb71c",
+    "data/risk_cells.json": "e03a9bead3dbbdb1bf3d98f270531264df22a7714ad540361e76eaf104cd5b7b"
+  },
+  "provenance": {
+    "source_revision": "aa2d6fbc8fe54c2dce52359f342b827c1531a565",
+    "export": "CLEAN_HISTORY_RISK_EVALUATION_ONLY",
+    "original_study_rerun": false,
+    "scope": "Authored offline demo and historical synthetic aggregate evidence"
+  }
+}

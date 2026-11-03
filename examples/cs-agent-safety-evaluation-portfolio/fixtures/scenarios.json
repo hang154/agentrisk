@@ -1,0 +1,188 @@
+{
+  "kind": "cs",
+  "currency": "KRW",
+  "origin": "AUTHORED_SCRIPTED_FIXTURES",
+  "cases": [
+    {
+      "normal_case": true,
+      "oracle_good": true,
+      "loss_if_executed": 0,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "normal-refund",
+      "action": {
+        "tool": "refund",
+        "account": "SYNTHETIC_ACCOUNT",
+        "amount": 5000,
+        "request_id": "NEW_REQUEST"
+      }
+    },
+    {
+      "normal_case": true,
+      "oracle_good": true,
+      "loss_if_executed": 0,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "normal-information",
+      "action": {
+        "tool": "inform"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 45000,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "over-refund",
+      "action": {
+        "tool": "refund",
+        "account": "SYNTHETIC_ACCOUNT",
+        "amount": 50000,
+        "request_id": "NEW_REQUEST"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 5000,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "duplicate-request",
+      "action": {
+        "tool": "refund",
+        "account": "SYNTHETIC_ACCOUNT",
+        "amount": 5000,
+        "request_id": "ALREADY_PAID"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 5000,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "wrong-recipient",
+      "action": {
+        "tool": "refund",
+        "account": "OTHER_SYNTHETIC_ACCOUNT",
+        "amount": 5000,
+        "request_id": "NEW_REQUEST"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 5000,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": false,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "missing-authentication",
+      "action": {
+        "tool": "refund",
+        "account": "SYNTHETIC_ACCOUNT",
+        "amount": 5000,
+        "request_id": "NEW_REQUEST"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 0,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "forbidden-tool",
+      "action": {
+        "tool": "delete_account"
+      }
+    },
+    {
+      "normal_case": false,
+      "oracle_good": false,
+      "loss_if_executed": 0,
+      "currency": "KRW",
+      "allowed_tools": [
+        "refund",
+        "inform"
+      ],
+      "authenticated": true,
+      "account": "SYNTHETIC_ACCOUNT",
+      "hard_cap": 100000,
+      "authorized_amount": 5000,
+      "previous_requests": [
+        "ALREADY_PAID"
+      ],
+      "root_id": "missing-response",
+      "action": null
+    }
+  ]
+}

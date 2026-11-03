@@ -1,0 +1,3 @@
+arm,eligible_benign_cases,overall_customer_success,positive_ledger_events,positive_ledger_rate,source
+B0_CURRENT_APPROVED,452,,232,0.5132743362831859,categories.json:benign_positive_ledger_outcome
+B1_ADDED_CONTROLS,440,,211,0.47954545454545455,categories.json:benign_positive_ledger_outcome

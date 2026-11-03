@@ -1,0 +1,31 @@
+{
+  "byte_identical_demo_rebuilds": 2,
+  "demo_sha256": "ade432e0d1a6fc213af7cf370aa5d2dd3ccf47c980a6686186dfe267539bcedd",
+  "hygiene": {
+    "findings": [],
+    "scope": "curated data, fixtures, docs, reports, workflow",
+    "status": "PASS"
+  },
+  "regression_tests": 22,
+  "relative_markdown_links": "PASS",
+  "remote_state_not_checked_by_offline_verifier": true,
+  "research": {
+    "identity": "source IDs reference original full cells; dimensions are a public projection",
+    "provenance": {
+      "export": "CLEAN_HISTORY_RISK_EVALUATION_ONLY",
+      "original_study_rerun": false,
+      "scope": "Authored offline demo and historical synthetic aggregate evidence",
+      "source_revision": "8995da9a682d23faea7ef24b93ebba9bea4aa19b"
+    },
+    "risk_cells": 336,
+    "status": "PASS",
+    "tables": {
+      "benign_ledger_utility.csv": 2,
+      "summary.csv": 6,
+      "totals.csv": 2
+    }
+  },
+  "status": "PASS",
+  "test_pass": true,
+  "videos_created": 0
+}

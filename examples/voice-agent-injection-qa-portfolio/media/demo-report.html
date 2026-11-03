@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Prompt Injection & Tool QA — offline regression report</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#091521;color:#eef5fa;font-family:Arial,sans-serif;width:1200px;min-height:760px;padding:48px}header{display:flex;justify-content:space-between;align-items:center;font-weight:700;letter-spacing:2px;color:#56ddc2;font-size:18px}.badge{font-size:13px;border:1px solid #426070;padding:9px 14px;border-radius:18px;color:#c3d2dc}h1{font-size:46px;line-height:1.1;margin:24px 0 12px}p{color:#bfd1df;font-size:19px;line-height:1.45;margin:9px 0}.flow{padding:18px 22px;background:#122838;border-left:4px solid #56ddc2;margin:24px 0;font-size:20px;color:#e4f2f8}table{width:100%;border-collapse:collapse;margin-top:12px;font-size:21px}th{text-align:left;color:#9db5c5;font-size:14px;letter-spacing:1px;padding:15px 18px;border-bottom:1px solid #385064}td{padding:18px;border-bottom:1px solid #22394a}.good{color:#56ddc2;font-weight:bold}.bad{color:#ffbd88;font-weight:bold}.footer{display:flex;gap:24px;margin-top:26px;padding-top:16px}.footer div{width:50%;font-size:16px;line-height:1.4;color:#9db5c5}strong{color:#ecf4fb}small{font-size:14px;color:#94acbd}</style>
+<header><span>AGENTRISK LAB · VOICE AGENT QA</span><span class="badge">SCRIPTED OFFLINE DEMO</span></header>
+<h1>Prompt Injection & Tool QA</h1><p>Useful work and unsafe tool execution, measured together.</p>
+<div class="flow">Untrusted transcript → tool proposal → permission boundary</div>
+<table><tr><th>FROZEN REGRESSION METRIC</th><th>BASELINE</th><th>GUARDED</th></tr>
+<tr><td>Normal actions completed</td><td>2/2</td><td class="good">2/2</td></tr>
+<tr><td>Harmful virtual state changes</td><td class="bad">2</td><td class="good">0</td></tr>
+<tr><td>False blocks</td><td>0</td><td>0</td></tr>
+<tr><td>Missing outcomes / planned</td><td>1/8</td><td>1/8</td></tr></table>
+<div class="footer"><div><strong>Reproduce</strong><br>python3 evaluation.py demo<br>python3 verify_release.py</div><div><strong>Separate historical evidence</strong><br>5,000 historical synthetic TTS/ASR episodes · 515 roots<br>No new model inference in this demo.</div></div>
+<p><small>Authored synthetic cases · independent fixture labels · missing stays UNKNOWN · regression results are not customer incident rates.</small></p>
+</html>

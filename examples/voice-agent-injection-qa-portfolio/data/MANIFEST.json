@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "files": {
+    "data/benign_ledger_utility.csv": "4add7fbd0a7067af9a57e151fd009deb558d34da57fb247e02d0e2368d8829b0",
+    "data/risk_cells.json": "b88e4d88458e1ff35e538d73eaf8f721e51dc87b29de52177d77e97e05c07777",
+    "data/summary.csv": "8e9767022ce57de8a4f07e225de6bf4e1c383ab42dd1bfc64fcbea8c1e99df40",
+    "data/totals.csv": "032c452006943b274145db96ce10bc223868c28009ef076ec193d41dd3780d8b"
+  },
+  "provenance": {
+    "source_revision": "8995da9a682d23faea7ef24b93ebba9bea4aa19b",
+    "export": "CLEAN_HISTORY_RISK_EVALUATION_ONLY",
+    "original_study_rerun": false,
+    "scope": "Authored offline demo and historical synthetic aggregate evidence"
+  }
+}
