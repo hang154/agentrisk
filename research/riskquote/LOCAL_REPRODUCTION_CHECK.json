@@ -1,0 +1,13 @@
+{
+  "pass_status": true,
+  "epoch": 1793040183.3076482,
+  "restored_blocks": 768,
+  "rows": 36864,
+  "primary_numeric_abs_tolerance": 1e-10,
+  "max_numeric_difference": 9.947598300641403e-14,
+  "independent_raw_reproduction": true,
+  "remote_local_independent_byte_identical": true,
+  "independent_sha256": "565d8d0e791d2a72c7f6d6abbc6c4b58d90d6412fd1adc5f5d3604a01f3cf65e",
+  "supplemental_reproduction": true,
+  "supplemental_max_float_difference": 9.592326932761353e-14
+}
