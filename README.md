@@ -4,6 +4,7 @@ AI 에이전트의 업무 효용, 권한, 통제와 사고 위험을 함께 평�
 
 - [시제품 사이트](https://hang154.github.io/agentrisk/)
 - [연구 결과와 출처](research/RESULTS_KO.md)
+- [전체 공개 보고서 색인](research/archive/INDEX.md) · [경제 실험 및 프로토콜](research/economy/INDEX.md)
 - [제품·연구 설계](research/DESIGN_KO.md)
 - [CS 평가 예제](examples/cs-agent-safety-evaluation-portfolio/)
 - [음성 인젝션 평가 예제](examples/voice-agent-injection-qa-portfolio/)

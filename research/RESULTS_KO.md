@@ -24,6 +24,7 @@
 순가치는 정상 업무 가치에서 수수료, 지연, 평가비용, 직접손실을 뺀 합성 지표다. 개별 95% 구간은 다중비교 동시구간이 아니다. 순가치 우위는 손실 감소와 같지 않다. WARM에서 AR의 가상 직접손실은 5,661, GB는 5,170이었다. 정책 선택과 이후 이력의 결합 효과이며 위험 예측 알고리즘 단독 효과로 해석하지 않는다.
 
 ## 공개 근거
+- [기존 연구 보고서 모음](archive/INDEX.md) · [Economy 연구 및 프로토콜](economy/INDEX.md)
 
 - [CS 공개 평가 결과](../examples/cs-agent-safety-evaluation-portfolio/docs/RESULTS.md)
 - [Voice 공개 평가 결과](../examples/voice-agent-injection-qa-portfolio/docs/RESULTS.md)

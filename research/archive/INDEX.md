@@ -1,0 +1,28 @@
+# 공개 연구 보고서 모음
+
+집계·분석 보고서 원문이다. 같은 연구의 중간 보고서와 후속 보고서는 별개이며, 관련 원시 증거와 상대 경로 자료 전체는 이 저장소에 포함되지 않는다.
+
+- [results/cs_e4b_v4_20261009/FINAL_REPORT_KO.md](results/cs_e4b_v4_20261009/FINAL_REPORT_KO.md)
+- [results/riskrank_6285_remediation_20261025/REMEDIATION_REPORT_KO.md](results/riskrank_6285_remediation_20261025/REMEDIATION_REPORT_KO.md)
+- [results/riskrank_n33_identities_r2_20261025/final/RESEARCH_FINDINGS_KO.md](results/riskrank_n33_identities_r2_20261025/final/RESEARCH_FINDINGS_KO.md)
+- [results/riskrank_v2_56_20261025/final/RESEARCH_FINDINGS_KO.md](results/riskrank_v2_56_20261025/final/RESEARCH_FINDINGS_KO.md)
+- [results/riskrank_v3_fourfield_20261025/final/RESEARCH_FINDINGS_KO.md](results/riskrank_v3_fourfield_20261025/final/RESEARCH_FINDINGS_KO.md)
+- [results/riskrank_v4_exact_permissions_20261025/final/RESEARCH_FINDINGS_KO.md](results/riskrank_v4_exact_permissions_20261025/final/RESEARCH_FINDINGS_KO.md)
+- [results/riskrank_v5_mean_prefix_20261025/final/RESEARCH_FINDINGS_KO.md](results/riskrank_v5_mean_prefix_20261025/final/RESEARCH_FINDINGS_KO.md)
+- [results/voice_redteam5000_20261009/FINAL_REPORT_KO.md](results/voice_redteam5000_20261009/FINAL_REPORT_KO.md)
+- [results/voice_redteam5000_20261009/ai_third_party_qwen_v11/FINAL_REPORT_KO.md](results/voice_redteam5000_20261009/ai_third_party_qwen_v11/FINAL_REPORT_KO.md)
+- [risk_engine/INTEGRATION_REPORT_KO.md](risk_engine/INTEGRATION_REPORT_KO.md)
+- [risk_engine/results/cs_benchmark_score_20261012/BENCHMARK_PREDICTION_REPORT_KO.md](risk_engine/results/cs_benchmark_score_20261012/BENCHMARK_PREDICTION_REPORT_KO.md)
+- [risk_engine/results/cs_reliability_checkpoint_20261013/customer_case_amendment_20261014/REPORT_KO.md](risk_engine/results/cs_reliability_checkpoint_20261013/customer_case_amendment_20261014/REPORT_KO.md)
+- [risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_precision_recheck_20261016/REPORT_KO.md](risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_precision_recheck_20261016/REPORT_KO.md)
+- [risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_precision_recheck_20261016/reusable_profile/REPORT_KO.md](risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_precision_recheck_20261016/reusable_profile/REPORT_KO.md)
+- [risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_speed_final_20261016/FINAL_REPORT_KO.md](risk_engine/results/cs_reliability_checkpoint_20261013/lfm25_speed_final_20261016/FINAL_REPORT_KO.md)
+- [risk_engine/results/cs_reliability_checkpoint_20261013/user_cutoff_20261016/RESEARCH_FINDINGS_KO.md](risk_engine/results/cs_reliability_checkpoint_20261013/user_cutoff_20261016/RESEARCH_FINDINGS_KO.md)
+- [risk_engine/results/cs_v2/CS_TASK_ASSESSMENT_KO.md](risk_engine/results/cs_v2/CS_TASK_ASSESSMENT_KO.md)
+- [risk_engine/results/cs_v3_checkpoint_20261012/live/final/RESEARCH_FINDINGS_KO.md](risk_engine/results/cs_v3_checkpoint_20261012/live/final/RESEARCH_FINDINGS_KO.md)
+- [risk_engine/results/cs_v3_r3_20261012/live/RESEARCH_FINDINGS_KO.md](risk_engine/results/cs_v3_r3_20261012/live/RESEARCH_FINDINGS_KO.md)
+- [risk_engine/results/cs_v3_r4_20261012/live/RESEARCH_FINDINGS_KO.md](risk_engine/results/cs_v3_r4_20261012/live/RESEARCH_FINDINGS_KO.md)
+- [risk_engine/results/cs_v3_remediation_20261012/live/RESEARCH_FINDINGS_KO.md](risk_engine/results/cs_v3_remediation_20261012/live/RESEARCH_FINDINGS_KO.md)
+- [risk_engine/results/cs_v3_replication_20261012/live/REPLICATION_REPORT_KO.md](risk_engine/results/cs_v3_replication_20261012/live/REPLICATION_REPORT_KO.md)
+- [risk_engine/results/v1/CODE_ASSESSMENT_KO.md](risk_engine/results/v1/CODE_ASSESSMENT_KO.md)
+- [risk_engine/results/v1/PAY_ASSESSMENT_KO.md](risk_engine/results/v1/PAY_ASSESSMENT_KO.md)
