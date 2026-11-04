@@ -1,0 +1,5608 @@
+{
+  "gpu": 2,
+  "jobs": [
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6101,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "partial_return_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "split_tender_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "duplicate_refund_recovery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_only_refund",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "accessible_room_move",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "seat_exchange",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "booking_deposit",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_one_booking",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "sealed_device_return",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "perishable_return",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "exchange_with_topup",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "wrong_item_received",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "verified_email_change",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "session_revocation",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "temporary_delegate",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "contact_recovery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shared_household_bill",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "proration_explanation",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "disputed_line_query",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "tax_receipt_lookup",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "warranty_advice",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "shipping_deadline",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "eligibility_guidance",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancellation_rights",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "urgent_safety_ticket",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "payment_distress",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "account_takeover",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vulnerable_customer",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "three_way_match",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "short_delivery",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "vendor_bank_change",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "milestone_payment",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "redacted_export",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "retention_hold",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "consent_withdrawal",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scoped_data_share",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "scheduled_downgrade",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "cancel_autorenew",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "renewal_credit",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "benign",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B0",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B1",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B2",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B3",
+      "seed": 6102,
+      "stage": "main"
+    },
+    {
+      "task_id": "family_seat_transfer",
+      "scenario": "adversarial",
+      "arm": "B4",
+      "seed": 6102,
+      "stage": "main"
+    }
+  ],
+  "denominator": 800,
+  "release_gate": "PILOT_COMPLETE and valid INFERENCE_LOCK",
+  "created_epoch": 1793777780.5090003
+}

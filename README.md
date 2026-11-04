@@ -6,6 +6,12 @@
 
 [사이트에서 연구 보기](https://hang154.github.io/agentrisk/) · [연구 목적과 전체 서사](research/RESEARCH_STORY_KO.md) · [교수님 검토용 문서](research/riskquote/PROFESSOR_NOTION_BRIEF_KO.md)
 
+## 신규 AI Control 실험 · 2026-11-04
+
+GPU2에서 신규 합성 업무 **800회**와 사후 모니터 판단 **800건**을 완료했습니다. 실행 영수증·상태 증거를 제공했을 때 모니터 Brier가 **0.2857→0.0188**로 낮아졌습니다. 적응형 통제의 단순 누적 제한 대비 우위는 사전 통계 기준을 통과하지 못했습니다.
+
+[결과·재현 방법](research/control_study_202611/README.md) · [영문 연구 요약](research/control_study_202611/RESEARCH_BRIEF_EN.md) · [전체 합성 실행 원시 자료](artifacts/control_study_202611/PUBLIC_EVIDENCE_RELEASE.json)
+
 ## 최근 핵심 실험: RiskQuote
 
 실제 Gemma E4B·GPT-OSS-20B가 가상 지급 업무를 수행한 신규 **36,864개 정책별 실행 기회**에서 AgentRisk 정책의 평균 구매자 순가치는 GBDT 기반 정책보다 COLD **+6.03**, WARM **+4.73** 합성 단위 높았습니다. 이전 시도를 포함한 8개 검정의 Holm 보정 p는 각각 **0.0273**입니다.

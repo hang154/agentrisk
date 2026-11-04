@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/monitor_paired/M3-M2/brier_difference",
+    "local": -0.0010650000000000021,
+    "remote": -0.001065000000000001,
+    "delta": 1.0842021724855044e-18
+  },
+  {
+    "path": "/monitor_paired/M3-M2/ci95/1",
+    "local": 0.014438296874999984,
+    "remote": 0.014438296874999985,
+    "delta": 1.734723475976807e-18
+  },
+  {
+    "path": "/monitor_paired/M2-M2_PROSE/brier_difference",
+    "local": -0.010981874999999999,
+    "remote": -0.010981875,
+    "delta": 1.734723475976807e-18
+  },
+  {
+    "path": "/monitor_paired/M2-M2_PROSE/ci95/0",
+    "local": -0.027217078124999995,
+    "remote": -0.027217078125000002,
+    "delta": 6.938893903907228e-18
+  },
+  {
+    "path": "/monitor_paired/M2-M2_PROSE/ci95/1",
+    "local": 0.0004475156249999989,
+    "remote": 0.00044751562499999864,
+    "delta": 2.710505431213761e-19
+  },
+  {
+    "path": "/monitor_paired/M2-M0/brier_difference",
+    "local": -0.26686249999999995,
+    "remote": -0.2668625,
+    "delta": 5.551115123125783e-17
+  },
+  {
+    "path": "/monitor_paired/M2-M0/ci95/1",
+    "local": -0.21411729687500003,
+    "remote": -0.21411729687500006,
+    "delta": 2.7755575615628914e-17
+  },
+  {
+    "path": "/forecasts/baseline_lr/log_loss",
+    "local": 0.8136074136243022,
+    "remote": 0.8136074136243043,
+    "delta": 2.1094237467877974e-15
+  },
+  {
+    "path": "/forecasts/baseline_beta/brier",
+    "local": 0.5133841140529487,
+    "remote": 0.5133841140529531,
+    "delta": 4.440892098500626e-15
+  },
+  {
+    "path": "/forecasts/baseline_beta/log_loss",
+    "local": 1.2725137713242554,
+    "remote": 1.272513771324259,
+    "delta": 3.552713678800501e-15
+  },
+  {
+    "path": "/forecasts/baseline_gbdt/brier",
+    "local": 0.2555252144353712,
+    "remote": 0.25552521443537224,
+    "delta": 1.0547118733938987e-15
+  },
+  {
+    "path": "/forecasts/baseline_gbdt/log_loss",
+    "local": 0.700831731183697,
+    "remote": 0.70083173118369,
+    "delta": 6.994405055138486e-15
+  },
+  {
+    "path": "/forecasts/risk_probability/log_loss",
+    "local": 0.6792759608265622,
+    "remote": 0.6792759608265606,
+    "delta": 1.5543122344752192e-15
+  },
+  {
+    "path": "/monitors/M2_PROSE/brier_all_valid",
+    "local": 0.02979124999999999,
+    "remote": 0.029791250000000002,
+    "delta": 1.0408340855860843e-17
+  },
+  {
+    "path": "/monitors/M1/brier_all_valid",
+    "local": 0.24828187500000007,
+    "remote": 0.24828187499999999,
+    "delta": 8.326672684688674e-17
+  },
+  {
+    "path": "/monitors/M3/brier_all_valid",
+    "local": 0.01774437499999999,
+    "remote": 0.017744375,
+    "delta": 1.0408340855860843e-17
+  },
+  {
+    "path": "/monitors/M2/brier_all_valid",
+    "local": 0.01880937499999999,
+    "remote": 0.018809375,
+    "delta": 1.0408340855860843e-17
+  },
+  {
+    "path": "/heldout_forecasts/baseline_lr/brier",
+    "local": 0.29629953219062277,
+    "remote": 0.29629953219062255,
+    "delta": 2.220446049250313e-16
+  },
+  {
+    "path": "/heldout_forecasts/baseline_lr/log_loss",
+    "local": 0.789878053783104,
+    "remote": 0.7898780537831023,
+    "delta": 1.7763568394002505e-15
+  },
+  {
+    "path": "/heldout_forecasts/baseline_beta/brier",
+    "local": 0.5103184466019433,
+    "remote": 0.5103184466019417,
+    "delta": 1.5543122344752192e-15
+  },
+  {
+    "path": "/heldout_forecasts/baseline_beta/log_loss",
+    "local": 1.2658333718359098,
+    "remote": 1.2658333718359152,
+    "delta": 5.329070518200751e-15
+  },
+  {
+    "path": "/heldout_forecasts/baseline_gbdt/brier",
+    "local": 0.2505543620717798,
+    "remote": 0.25055436207178006,
+    "delta": 2.7755575615628914e-16
+  },
+  {
+    "path": "/heldout_forecasts/baseline_gbdt/log_loss",
+    "local": 0.6888154627348853,
+    "remote": 0.6888154627348844,
+    "delta": 8.881784197001252e-16
+  },
+  {
+    "path": "/heldout_forecasts/risk_probability/log_loss",
+    "local": 0.6719901368825374,
+    "remote": 0.6719901368825363,
+    "delta": 1.1102230246251565e-15
+  }
+]

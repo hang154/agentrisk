@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "episodes_checked": 840,
+  "main_rows": 800,
+  "monitor_rows_checked": 800,
+  "discrete_results": "EXACT",
+  "float_absolute_tolerance": 1e-12
+}

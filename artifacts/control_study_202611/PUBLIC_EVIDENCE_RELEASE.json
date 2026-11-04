@@ -1,0 +1,14 @@
+{
+  "archive": "SYNTHETIC_RAW_EVIDENCE.tar.gz",
+  "archive_sha256": "1da1de0c9fde4219fc657a87db152e936cf7372092d4e7b3eb8291813a4b15c4",
+  "archive_bytes": 7625074,
+  "member_count": 44182,
+  "member_bytes": 76372741,
+  "main_episodes": 800,
+  "pilot_episodes": 40,
+  "post_action_monitor_calls": 800,
+  "capacity_calls": 3072,
+  "scope": "All new synthetic scientific and diagnostic wire records. Historical private Voice packets and host operational logs excluded.",
+  "no_credentials_in_wire": true,
+  "human_review_complete": false
+}

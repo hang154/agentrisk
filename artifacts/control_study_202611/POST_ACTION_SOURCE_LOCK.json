@@ -1,0 +1,17 @@
+{
+  "stage": "post_action_only",
+  "epoch": 1793778321.5560896,
+  "protocol_sha256": "25e938b98eb8c95bc5354a2073fab4e9b33e8e791e1df341b01cdf1e6ea35b10",
+  "commit": "0b1a72d3191918a3ce50bf1b7019385c26b0188b",
+  "remote_commit_verified": true,
+  "original_source_sha256": {
+    "runner.py": "5b2182a6820da091a534c2cb48bdfbb24431b9e0322667eb577a59c008b8ffd4",
+    "analysis.py": "bf7c0413372b98108367ed4850673a670da5f457aa88095252eba17b2dcf73b2"
+  },
+  "source_sha256": {
+    "runner.py": "ec2dbbb4d451017b0f6b692c3c04ff578265dcf77b095e5a0c75b66e6075afa0",
+    "analysis.py": "bb79a29bab246b26650e3a4fb423961f6b90ade6af8a81173b95766690801e03"
+  },
+  "main_episodes_reissued": 0,
+  "reason": "Exact-hash admission for canonical analysis ordering; original main source and protocol preserved; actor/model/monitor prompts and scoring contract unchanged."
+}

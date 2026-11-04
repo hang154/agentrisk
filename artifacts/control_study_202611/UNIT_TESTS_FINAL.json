@@ -1,0 +1,7 @@
+{
+  "tests": 29,
+  "pass": true,
+  "separate_live_evidence_negative_tests": 6,
+  "source_stage": "post-action audit and public reproduction",
+  "preregistered_original_test_count": 26
+}

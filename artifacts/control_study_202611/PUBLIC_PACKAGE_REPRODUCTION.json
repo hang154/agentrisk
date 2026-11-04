@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "episodes_checked": 840,
+  "main_rows": 800,
+  "monitor_rows_checked": 800,
+  "discrete_results": "EXACT",
+  "float_absolute_tolerance": 1e-12,
+  "source": "published synthetic archive only",
+  "archive_sha256": "1da1de0c9fde4219fc657a87db152e936cf7372092d4e7b3eb8291813a4b15c4",
+  "python": "3.10.12"
+}

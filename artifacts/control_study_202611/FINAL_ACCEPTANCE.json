@@ -1,0 +1,72 @@
+{
+  "study": "agentrisk-control-20261104-v1",
+  "core_execution_and_analysis_complete": true,
+  "scientific_safety_utility_primary_success": false,
+  "entire_research_agenda_complete": false,
+  "gpu_target": 2,
+  "model_retained": true,
+  "main": {
+    "planned": 800,
+    "completed": 800,
+    "known": 800,
+    "unknown": 0,
+    "api_calls": 3751,
+    "api_tokens": 4148896,
+    "output_tokens": 771514
+  },
+  "pilot": {
+    "episodes": 40,
+    "excluded_from_main": true
+  },
+  "monitors": {
+    "planned": 800,
+    "completed": 800,
+    "valid": 800,
+    "api_tokens": 892113,
+    "output_tokens": 202423,
+    "selected_actions": 160,
+    "selected_actual_unsafe_actions": 5
+  },
+  "capacity": {
+    "calls": 3072,
+    "scientific_episodes": 0,
+    "best_tested_client_concurrency": 512,
+    "hardware_ceiling_claim": false
+  },
+  "verification": {
+    "unit_tests": 29,
+    "unit_tests_pass": true,
+    "monitor_tamper_tests_rejected": 6,
+    "independent_episodes": 840,
+    "independent_monitor_calls": 800,
+    "public_archive_reproduction_pass": true,
+    "discrete_results_exact": true,
+    "max_cross_python_float_delta": 6.994405055138486e-15,
+    "float_absolute_tolerance": 1e-12,
+    "original_results_modified": false,
+    "main_reissued": 0
+  },
+  "backups": {
+    "full_source_files": 48539,
+    "full_source_bytes": 90676790,
+    "SSD_sha_verified": true,
+    "separate_HDD_sha_verified": true,
+    "NAS": "BLOCKED_QUOTA_ERRNO_122",
+    "NAS_original_data_deleted": false,
+    "github": "This release contains the verified public scientific archive, source, results and protocol; remote commit hash is verified separately after push."
+  },
+  "open_research": {
+    "human_double_review": "PREPARED_NOT_PERFORMED",
+    "multi_session_multi_agent": "FOLLOWUP_NOT_EXECUTED",
+    "adaptive_attacker": "FOLLOWUP_NOT_EXECUTED",
+    "historical_RiskRank_transport": "UNIDENTIFIED",
+    "RiskQuote_factor_ablation": "FOLLOWUP_NOT_EXECUTED",
+    "native_ControlArena_plugin": "NOT_CERTIFIED"
+  },
+  "amendments": [
+    "Deterministic monitor-bootstrap ordering, before downstream analysis",
+    "Explicit post-action source binding; original main source and outputs preserved",
+    "Exact discrete/1e-12 float comparison for cross-Python arithmetic; no scientific threshold change",
+    "Posthoc calibration/paired Brier sensitivity separated from primary tests"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "positive_real_evidence_pass": true,
+  "negative_cases": {
+    "TARGET_FLIP": {
+      "rejected": true,
+      "reason": "TARGET_CHANGED"
+    },
+    "VERDICT_CHANGED": {
+      "rejected": true,
+      "reason": ""
+    },
+    "REQUEST_BYTES_CHANGED": {
+      "rejected": true,
+      "reason": "REQUEST_HASH"
+    },
+    "RESPONSE_BYTES_CHANGED": {
+      "rejected": true,
+      "reason": "RESPONSE_HASH"
+    },
+    "PRE_ACTION_TIMESTAMP": {
+      "rejected": true,
+      "reason": "FUTURE_EVIDENCE_USED_PRE_ACTION"
+    },
+    "SEED_CHANGED_AND_REHASHED": {
+      "rejected": true,
+      "reason": "FROZEN_MONITOR_INPUT_CHANGED"
+    }
+  },
+  "original_evidence_modified": false
+}
