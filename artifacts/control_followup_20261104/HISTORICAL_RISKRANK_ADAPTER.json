@@ -1,0 +1,12 @@
+{
+  "original_frozen_forecasts_checked": 2304,
+  "maximum_absolute_delta": 0.0,
+  "tolerance": 1e-12,
+  "parity_pass": true,
+  "new_organization_tasks": 6,
+  "new_tasks_predictions_issued": 0,
+  "unsupported_status": "NEEDS_ANCHOR_EVALUATION",
+  "unattested_native_configuration_rejected": true,
+  "original_model_sha256": "8e85bbf0e1521ca9ca0ae0f06a0809cbf295c1be7e17556368378fe3d1b403ff",
+  "original_forecasts_unchanged": true
+}
