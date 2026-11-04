@@ -1,0 +1,20 @@
+{
+  "pass_gate": true,
+  "total": 59,
+  "suites": [
+    {
+      "suite": "agentrisk-followup-tests-reviewed.log",
+      "tests": 30,
+      "pass_gate": true,
+      "log_sha256": "13fe5b54a255e6371b9856ec8740cadb5ba887ec763664b98cc66a644fc6dd2e",
+      "output": "..............................\n----------------------------------------------------------------------\nRan 30 tests in 2.017s\n\nOK\n"
+    },
+    {
+      "suite": "agentrisk-original-tests-reviewed.log",
+      "tests": 29,
+      "pass_gate": true,
+      "log_sha256": "b0ce4033d94f8d3b3ce40ff51dfce858eaa6f00f6cabb2d73d87f94cff6b204c",
+      "output": ".............................\n----------------------------------------------------------------------\nRan 29 tests in 3.086s\n\nOK\n"
+    }
+  ]
+}

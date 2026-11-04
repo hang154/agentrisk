@@ -1,0 +1,101 @@
+{
+  "scope": "PROTOCOL.md work tracks; execution completion is separate from scientific superiority",
+  "checks": [
+    {
+      "requirement": "사람 블라인드 이중 검토",
+      "status": "SKIPPED_BY_USER",
+      "artifact": "HUMAN_REVIEW_WAIVER.json",
+      "detail": "156건 패키지 보존; 실제 사람 검토 0건"
+    },
+    {
+      "requirement": "실행 증거 기반 모니터 전수 비교",
+      "status": "PASS",
+      "artifact": "MONITOR_CENSUS.json",
+      "detail": "491행동 × 5조건 = 2,455판정; 기존 800판정 재사용"
+    },
+    {
+      "requirement": "원본 V1 제어 정책 비교 보존",
+      "status": "PASS",
+      "artifact": "../control_study_202611/FINAL_STATUS.json",
+      "detail": "800회 실행 결과 변경 없음; 적응형 우위 미입증"
+    },
+    {
+      "requirement": "다중 에이전트·세션·이력 공유",
+      "status": "EXECUTED_WITH_UNKNOWNS",
+      "artifact": "ORGANIZATION_REPRODUCTION.json",
+      "detail": "1,728팀; 7개 원본 HTTP 미확정 보존; 1개 지급 메커니즘"
+    },
+    {
+      "requirement": "방어 인지 공격 개발·동결",
+      "status": "PASS",
+      "artifact": "ADAPTIVE_ATTACKER_AUDIT.json",
+      "detail": "8후보·24개 개발 검증; 선택 공격의 위험 실행 0건으로 강한 공격 검증 아님"
+    },
+    {
+      "requirement": "RiskQuote 구성요소 실제 실행",
+      "status": "PASS",
+      "artifact": "COMPONENT_REPRODUCTION.json",
+      "detail": "4,896거래·17조건; 원본 24규칙 통계 보존"
+    },
+    {
+      "requirement": "공유 출처 단위 통계 보완",
+      "status": "PASS",
+      "artifact": "REVIEWED_COMPONENT_ANALYSIS.json",
+      "detail": "12출처 사후 분석; 별도 4,096부호 조합 전수 검산"
+    },
+    {
+      "requirement": "역사적 예측기 이식·지원 계약",
+      "status": "PASS",
+      "artifact": "HISTORICAL_RISKRANK_ADAPTER.json",
+      "detail": "2,304개 RiskRank·1,440개 RiskQuote 원본 예측 대조; 미지원 업무는 보류"
+    },
+    {
+      "requirement": "새 업무에서 예측·적응형 통제 우위",
+      "status": "NOT_ESTABLISHED",
+      "artifact": "REVIEWED_COMPONENT_ANALYSIS.json",
+      "detail": "기존 업무 규칙의 재사용을 신규 업무 일반화로 주장하지 않음"
+    },
+    {
+      "requirement": "실제 궤적 교환 형식",
+      "status": "PASS",
+      "artifact": "COMPONENT_EXPORT_VALIDATION.json",
+      "detail": "조직 1,728팀 및 구성요소 4,896거래 전체 내보내기"
+    },
+    {
+      "requirement": "native ControlArena 플러그인 실행",
+      "status": "NOT_CLAIMED",
+      "artifact": "ORGANIZATION_EXPORT_VALIDATION.json",
+      "detail": "현재 산출물은 공식 directory 형식 교환 검증"
+    },
+    {
+      "requirement": "원시 자료 복원·독립 재분석",
+      "status": "PASS",
+      "artifact": "FINAL_REPRODUCTION.json",
+      "detail": "공개 아카이브 복원본에서 검산; 신규 추론 0건"
+    },
+    {
+      "requirement": "코드·결과 표 재생성 검사",
+      "status": "PASS",
+      "artifact": "TEST_VALIDATION.json",
+      "detail": "59개 테스트 및 CSV 정확 재생성"
+    },
+    {
+      "requirement": "SSD·HDD 증빙 백업",
+      "status": "PASS",
+      "artifact": "BACKUP_VERIFICATION.json",
+      "detail": "별도 파일시스템 8개 아카이브 읽기 후 SHA 일치"
+    },
+    {
+      "requirement": "NAS 쓰기",
+      "status": "BLOCKED_QUOTA",
+      "artifact": "BACKUP_VERIFICATION.json",
+      "detail": "errno 122 보존; 기존 자료 삭제 없이 SSD·HDD·GitHub 경로 사용"
+    },
+    {
+      "requirement": "GPU2 서비스 보존",
+      "status": "PASS",
+      "artifact": "SERVICE_FINAL_STATUS.json",
+      "detail": "GPT-OSS API 유지, 실험 대기 요청 0건; 다른 GPU 변경 없음"
+    }
+  ]
+}

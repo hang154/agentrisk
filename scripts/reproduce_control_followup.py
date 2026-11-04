@@ -2,7 +2,7 @@
 """Recompute released follow-up evidence without GPU calls or dependencies."""
 import argparse,json,pathlib,sys,time
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
-from experiments.control_followup_20261104 import audit_census,audit_attacker,audit_organizations,audit_components
+from experiments.control_followup_20261104 import audit_census,audit_attacker,audit_organizations,audit_components,audit_parser,review_component_lineage
 from experiments.control_study_202611.reproduction_compare import assert_equivalent
 
 def main():
@@ -11,5 +11,7 @@ def main():
  for name,fn,filename in jobs:
   result=json.loads(json.dumps(fn()));assert_equivalent(result,json.loads((reports/filename).read_text()));checks[name]={'pass_gate':True,'raw_calls':result.get('raw_calls',result.get('raw_calls_verified',result.get('new_calls')))};print(name,'PASS',flush=True)
  old=audit_components.audit(root/'components',require_full=False,write=False);assert old['pilot_trades']==17 and old['raw_calls']==68;checks['failed_original_pilot']={'raw_reconstruction':True,'scientific_samples':0}
+ reviewed=review_component_lineage.review(root/'components_schema_v2');assert_equivalent(reviewed,json.loads((reports/'REVIEWED_COMPONENT_ANALYSIS.json').read_text()));checks['component_shared_lineage']={'pass_gate':True,'clusters':12,'post_hoc':True}
+ parser=audit_parser.audit(root,[root/x for x in ['organizations_continuation','components','components_schema_v2','parser_canary']],write=False);assert_equivalent(parser,json.loads((reports/'PARSER_RECOVERY_AUDIT.json').read_text()));checks['parser_recovery']={'pass_gate':True,'matched_raw_responses':parser['recoveries']}
  result={'pass_gate':True,'checks':checks,'seconds':time.time()-start,'discrete_exact':True,'float_tolerance':1e-12,'new_model_requests':0};pathlib.Path(a.output).write_text(json.dumps(result,indent=2));print(json.dumps(result))
 if __name__=='__main__':main()

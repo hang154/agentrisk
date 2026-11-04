@@ -1,0 +1,38 @@
+{
+  "pass_gate": true,
+  "checks": {
+    "census": {
+      "pass_gate": true,
+      "raw_calls": 1655
+    },
+    "attacker": {
+      "pass_gate": true,
+      "raw_calls": 109
+    },
+    "organizations": {
+      "pass_gate": true,
+      "raw_calls": 28046
+    },
+    "components": {
+      "pass_gate": true,
+      "raw_calls": 19652
+    },
+    "failed_original_pilot": {
+      "raw_reconstruction": true,
+      "scientific_samples": 0
+    },
+    "component_shared_lineage": {
+      "pass_gate": true,
+      "clusters": 12,
+      "post_hoc": true
+    },
+    "parser_recovery": {
+      "pass_gate": true,
+      "matched_raw_responses": 39
+    }
+  },
+  "seconds": 160.7157871723175,
+  "discrete_exact": true,
+  "float_tolerance": 1e-12,
+  "new_model_requests": 0
+}

@@ -1,0 +1,29 @@
+{
+  "pass_gate": true,
+  "scope": "new synthetic raw, runtime metadata and component trajectory archives",
+  "rules": [
+    "Hugging Face token shape",
+    "GitHub token shape",
+    "private key header",
+    "Bearer credential shape"
+  ],
+  "archives": [
+    {
+      "archive": "COMPONENT_SCHEMA_V2_RAW.tar.gz",
+      "regular_files_scanned": 108931,
+      "sha256": "15172cb7ccd9bbfc08846b9924aff198c0a7f78179011b2285cb5111dba9a45b"
+    },
+    {
+      "archive": "REVIEW_RUNTIME_METADATA.tar.gz",
+      "regular_files_scanned": 488,
+      "sha256": "2ccca550fe1ccbfc41df293b3d46aac00191d47c72543fea0e8b138250c8d1d8"
+    },
+    {
+      "archive": "COMPONENT_TRAJECTORIES.tar.gz",
+      "regular_files_scanned": 4,
+      "sha256": "41363c0796546616ef8cd032aa8ea0e105b38fba5e230673f317ee4c4ed22ea3"
+    }
+  ],
+  "matches": [],
+  "epoch": 1793787059.8704946
+}

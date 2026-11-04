@@ -12,6 +12,12 @@ GPU2에서 신규 합성 업무 **800회**와 사후 모니터 판단 **800건**
 
 [결과·재현 방법](research/control_study_202611/README.md) · [영문 연구 요약](research/control_study_202611/RESEARCH_BRIEF_EN.md) · [전체 합성 실행 원시 자료](artifacts/control_study_202611/PUBLIC_EVIDENCE_RELEASE.json)
 
+## Control Study 후속 검토·보완
+
+사후 모니터 **2,455판정**, 조직·세션 실험 **1,728팀**, RiskQuote 구성요소 비교 **4,896거래**를 완료했습니다. 실행 증거를 받은 모니터의 개선은 관측됐지만, 적응형 통제 및 AR 예측기의 기준선 대비 우위는 입증되지 않았습니다. 원래 미확정 7팀과 실패 파일럿을 보존했고 사람 이중 검토는 사용자 요청으로 생략했습니다.
+
+[검토·보완 결과](research/control_followup_20261104/RESEARCH_FINDINGS_KO.md) · [영문 연구 요약](research/control_followup_20261104/RESEARCH_BRIEF_EN.md) · [원시 자료로 재현](research/control_followup_20261104/README.md) · [요구사항별 완료표](research/control_followup_20261104/COMPLETION_MATRIX.md)
+
 ## 최근 핵심 실험: RiskQuote
 
 실제 Gemma E4B·GPT-OSS-20B가 가상 지급 업무를 수행한 신규 **36,864개 정책별 실행 기회**에서 AgentRisk 정책의 평균 구매자 순가치는 GBDT 기반 정책보다 COLD **+6.03**, WARM **+4.73** 합성 단위 높았습니다. 이전 시도를 포함한 8개 검정의 Holm 보정 p는 각각 **0.0273**입니다.

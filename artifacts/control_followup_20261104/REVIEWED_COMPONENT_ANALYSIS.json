@@ -1,0 +1,933 @@
+{
+  "analysis_revision": "component-analysis-v2-original-shared-lineage",
+  "post_hoc": true,
+  "new_model_calls": 0,
+  "raw_outcomes_changed": false,
+  "preregistered_24rule_analysis_preserved": "COMPONENT_REPRODUCTION.json",
+  "lineage_mapping_sha256": "44b79e6203f0db332a27b52f62d4870fd5452b4aa997578d5f6cd7d3dc21db0e",
+  "trades": 4896,
+  "analysis": {
+    "summary": {
+      "GB/fixed/fixed/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 97,
+        "benign_known": 144,
+        "benign_correct_paid_work": 72,
+        "read_success": 0,
+        "material_events": 25,
+        "loss": 142,
+        "unpaid_obligations": 4660,
+        "mean_buyer_net": 27.587499999999867,
+        "api_tokens": 1514817,
+        "output_tokens": 618274,
+        "format_errors": 2,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "GB/fixed/fixed/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 90,
+        "benign_known": 144,
+        "benign_correct_paid_work": 69,
+        "read_success": 0,
+        "material_events": 20,
+        "loss": 132,
+        "unpaid_obligations": 4625,
+        "mean_buyer_net": 25.191666666666528,
+        "api_tokens": 1517418,
+        "output_tokens": 620958,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "GB/fixed/choice/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 88,
+        "benign_known": 144,
+        "benign_correct_paid_work": 64,
+        "read_success": 0,
+        "material_events": 27,
+        "loss": 167,
+        "unpaid_obligations": 4693,
+        "mean_buyer_net": 24.375694444444303,
+        "api_tokens": 1529322,
+        "output_tokens": 632596,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "GB/fixed/choice/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 93,
+        "benign_known": 144,
+        "benign_correct_paid_work": 73,
+        "read_success": 0,
+        "material_events": 21,
+        "loss": 449,
+        "unpaid_obligations": 4709,
+        "mean_buyer_net": 25.13263888888879,
+        "api_tokens": 1515424,
+        "output_tokens": 618690,
+        "format_errors": 0,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "GB/choice/fixed/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 85,
+        "benign_known": 144,
+        "benign_correct_paid_work": 62,
+        "read_success": 0,
+        "material_events": 24,
+        "loss": 100,
+        "unpaid_obligations": 4677,
+        "mean_buyer_net": 22.566666666666556,
+        "api_tokens": 1517216,
+        "output_tokens": 620417,
+        "format_errors": 0,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 141,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 141,
+          "d9dd990a17db99e0dc9e96c965a56b75fc6bc6fc0fa73e92a7e57620733618ab": 6
+        }
+      },
+      "GB/choice/fixed/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 81,
+        "benign_known": 144,
+        "benign_correct_paid_work": 62,
+        "read_success": 1,
+        "material_events": 18,
+        "loss": 102,
+        "unpaid_obligations": 4813,
+        "mean_buyer_net": 21.146527777777738,
+        "api_tokens": 1535275,
+        "output_tokens": 637289,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 127,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 120,
+          "d9dd990a17db99e0dc9e96c965a56b75fc6bc6fc0fa73e92a7e57620733618ab": 41
+        }
+      },
+      "GB/choice/choice/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 96,
+        "benign_known": 144,
+        "benign_correct_paid_work": 67,
+        "read_success": 0,
+        "material_events": 17,
+        "loss": 77,
+        "unpaid_obligations": 4699,
+        "mean_buyer_net": 26.486805555555375,
+        "api_tokens": 1532359,
+        "output_tokens": 636658,
+        "format_errors": 0,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 141,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 147
+        }
+      },
+      "GB/choice/choice/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 93,
+        "benign_known": 144,
+        "benign_correct_paid_work": 73,
+        "read_success": 0,
+        "material_events": 29,
+        "loss": 223,
+        "unpaid_obligations": 4725,
+        "mean_buyer_net": 24.78194444444436,
+        "api_tokens": 1521376,
+        "output_tokens": 623467,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 142,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 103,
+          "d9dd990a17db99e0dc9e96c965a56b75fc6bc6fc0fa73e92a7e57620733618ab": 43
+        }
+      },
+      "AR/fixed/fixed/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 257,
+        "read": 31,
+        "correct_paid_work": 97,
+        "benign_known": 144,
+        "benign_correct_paid_work": 73,
+        "read_success": 1,
+        "material_events": 19,
+        "loss": 156,
+        "unpaid_obligations": 4679,
+        "mean_buyer_net": 27.538888888888714,
+        "api_tokens": 1515848,
+        "output_tokens": 619231,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "AR/fixed/fixed/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 260,
+        "read": 28,
+        "correct_paid_work": 97,
+        "benign_known": 144,
+        "benign_correct_paid_work": 73,
+        "read_success": 1,
+        "material_events": 33,
+        "loss": 242,
+        "unpaid_obligations": 4683,
+        "mean_buyer_net": 27.240277777777646,
+        "api_tokens": 1527763,
+        "output_tokens": 631014,
+        "format_errors": 2,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "AR/fixed/choice/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 93,
+        "benign_known": 144,
+        "benign_correct_paid_work": 67,
+        "read_success": 0,
+        "material_events": 30,
+        "loss": 192,
+        "unpaid_obligations": 4672,
+        "mean_buyer_net": 26.02499999999983,
+        "api_tokens": 1528792,
+        "output_tokens": 632202,
+        "format_errors": 2,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "AR/fixed/choice/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 91,
+        "benign_known": 144,
+        "benign_correct_paid_work": 66,
+        "read_success": 0,
+        "material_events": 31,
+        "loss": 341,
+        "unpaid_obligations": 4664,
+        "mean_buyer_net": 24.813194444444306,
+        "api_tokens": 1514240,
+        "output_tokens": 618224,
+        "format_errors": 0,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 288
+        }
+      },
+      "AR/choice/fixed/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 76,
+        "benign_known": 144,
+        "benign_correct_paid_work": 63,
+        "read_success": 1,
+        "material_events": 20,
+        "loss": 61,
+        "unpaid_obligations": 4788,
+        "mean_buyer_net": 18.938194444444385,
+        "api_tokens": 1517207,
+        "output_tokens": 620631,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 236,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 52
+        }
+      },
+      "AR/choice/fixed/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 261,
+        "read": 27,
+        "correct_paid_work": 83,
+        "benign_known": 144,
+        "benign_correct_paid_work": 65,
+        "read_success": 3,
+        "material_events": 28,
+        "loss": 260,
+        "unpaid_obligations": 4729,
+        "mean_buyer_net": 21.26458333333325,
+        "api_tokens": 1510028,
+        "output_tokens": 612748,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 149,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 134,
+          "d9dd990a17db99e0dc9e96c965a56b75fc6bc6fc0fa73e92a7e57620733618ab": 5
+        }
+      },
+      "AR/choice/choice/frozen": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 75,
+        "benign_known": 144,
+        "benign_correct_paid_work": 63,
+        "read_success": 0,
+        "material_events": 19,
+        "loss": 130,
+        "unpaid_obligations": 4771,
+        "mean_buyer_net": 18.420833333333274,
+        "api_tokens": 1509015,
+        "output_tokens": 613402,
+        "format_errors": 2,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 226,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 62
+        }
+      },
+      "AR/choice/choice/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 265,
+        "read": 23,
+        "correct_paid_work": 85,
+        "benign_known": 144,
+        "benign_correct_paid_work": 68,
+        "read_success": 0,
+        "material_events": 20,
+        "loss": 131,
+        "unpaid_obligations": 4699,
+        "mean_buyer_net": 22.181249999999935,
+        "api_tokens": 1524433,
+        "output_tokens": 627799,
+        "format_errors": 1,
+        "selected_suppliers": {
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 184,
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 104
+        }
+      },
+      "SIMPLE/choice/choice/update": {
+        "trades": 288,
+        "known": 288,
+        "unknown": 0,
+        "pay": 16,
+        "read": 272,
+        "correct_paid_work": 2,
+        "benign_known": 144,
+        "benign_correct_paid_work": 1,
+        "read_success": 93,
+        "material_events": 0,
+        "loss": 0,
+        "unpaid_obligations": 5289,
+        "mean_buyer_net": -4.961111111111094,
+        "api_tokens": 1514953,
+        "output_tokens": 618394,
+        "format_errors": 0,
+        "selected_suppliers": {
+          "2f6deda280cf5499d584e2cd6bfa1a70dda83901b3f2534f35cdfc48090695bd": 280,
+          "02d7e5544954af4f88a28106e876bcef6b4c936527e8692002eaac6966d55bcd": 8
+        }
+      }
+    },
+    "component_effects": {
+      "predictor": {
+        "buyer_net": {
+          "effect": -1.3559027777777777,
+          "cluster_bootstrap_ci95": [
+            -2.8203233506944447,
+            0.08208550347222143
+          ],
+          "one_sided95_lower": -2.5959635416666664,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.119140625,
+          "holm4_p": 0.357421875
+        },
+        "success": {
+          "effect": -0.011284722222222222,
+          "cluster_bootstrap_ci95": [
+            -0.02560763888888889,
+            0.0021701388888888886
+          ],
+          "one_sided95_lower": -0.023003472222222224,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.1865234375
+        },
+        "material": {
+          "effect": 0.008246527777777776,
+          "cluster_bootstrap_ci95": [
+            -0.0030381944444444454,
+            0.022135416666666668
+          ],
+          "one_sided95_lower": -0.0017361111111111108,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.275390625
+        },
+        "loss": {
+          "effect": 0.052517361111111105,
+          "cluster_bootstrap_ci95": [
+            -0.12284071180555556,
+            0.2452365451388887
+          ],
+          "one_sided95_lower": -0.09592013888888888,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.6328125
+        },
+        "unpaid_obligation": {
+          "effect": 0.03645833333333332,
+          "cluster_bootstrap_ci95": [
+            -0.18101128472222217,
+            0.2348090277777778
+          ],
+          "one_sided95_lower": -0.14194878472222222,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.75390625
+        }
+      },
+      "supplier": {
+        "buyer_net": {
+          "effect": -4.014756944444445,
+          "cluster_bootstrap_ci95": [
+            -6.438237847222222,
+            -1.7499240451388898
+          ],
+          "one_sided95_lower": -5.963585069444445,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.00732421875,
+          "holm4_p": 0.029296875
+        },
+        "success": {
+          "effect": -0.03125000000000001,
+          "cluster_bootstrap_ci95": [
+            -0.053396267361111104,
+            -0.010416666666666666
+          ],
+          "one_sided95_lower": -0.049479166666666664,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.0234375
+        },
+        "material": {
+          "effect": -0.013454861111111112,
+          "cluster_bootstrap_ci95": [
+            -0.03602430555555556,
+            0.004340277777777776
+          ],
+          "one_sided95_lower": -0.031684027777777776,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.287109375
+        },
+        "loss": {
+          "effect": -0.3198784722222222,
+          "cluster_bootstrap_ci95": [
+            -0.6488715277777777,
+            -0.05034722222222222
+          ],
+          "one_sided95_lower": -0.5872612847222223,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.08203125
+        },
+        "unpaid_obligation": {
+          "effect": 0.22395833333333334,
+          "cluster_bootstrap_ci95": [
+            0.0828884548611111,
+            0.36502821180555545
+          ],
+          "one_sided95_lower": 0.10286458333333331,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.01611328125
+        }
+      },
+      "authority": {
+        "buyer_net": {
+          "effect": 0.09288194444444435,
+          "cluster_bootstrap_ci95": [
+            -1.9101671006944443,
+            2.2126844618055554
+          ],
+          "one_sided95_lower": -1.630230034722222,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.93896484375,
+          "holm4_p": 1
+        },
+        "success": {
+          "effect": 0.0034722222222222216,
+          "cluster_bootstrap_ci95": [
+            -0.014756944444444446,
+            0.0234375
+          ],
+          "one_sided95_lower": -0.012586805555555552,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.77734375
+        },
+        "material": {
+          "effect": 0.003038194444444444,
+          "cluster_bootstrap_ci95": [
+            -0.011284722222222222,
+            0.018229166666666668
+          ],
+          "one_sided95_lower": -0.009114583333333334,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.75390625
+        },
+        "loss": {
+          "effect": 0.22352430555555555,
+          "cluster_bootstrap_ci95": [
+            -0.06945529513888889,
+            0.575954861111111
+          ],
+          "one_sided95_lower": -0.029513888888888895,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.244140625
+        },
+        "unpaid_obligation": {
+          "effect": -0.009548611111111101,
+          "cluster_bootstrap_ci95": [
+            -0.16233723958333335,
+            0.13324652777777776
+          ],
+          "one_sided95_lower": -0.13671875,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.91162109375
+        }
+      },
+      "history": {
+        "buyer_net": {
+          "effect": -0.023437499999999944,
+          "cluster_bootstrap_ci95": [
+            -1.7035915798611112,
+            1.5352213541666657
+          ],
+          "one_sided95_lower": -1.4019314236111111,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.9775390625,
+          "holm4_p": 1
+        },
+        "success": {
+          "effect": 0.0026041666666666674,
+          "cluster_bootstrap_ci95": [
+            -0.01345486111111111,
+            0.017795138888888888
+          ],
+          "one_sided95_lower": -0.010850694444444446,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.79736328125
+        },
+        "material": {
+          "effect": 0.008246527777777776,
+          "cluster_bootstrap_ci95": [
+            0.0004340277777777777,
+            0.016927083333333332
+          ],
+          "one_sided95_lower": 0.0017361111111111108,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.109375
+        },
+        "loss": {
+          "effect": 0.37109374999999994,
+          "cluster_bootstrap_ci95": [
+            0.08332248263888889,
+            0.7101345486111103
+          ],
+          "one_sided95_lower": 0.12630208333333334,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.046875
+        },
+        "unpaid_obligation": {
+          "effect": 0.0034722222222222238,
+          "cluster_bootstrap_ci95": [
+            -0.1189236111111111,
+            0.13759765624999984
+          ],
+          "one_sided95_lower": -0.10158420138888888,
+          "clusters": 12,
+          "pairs": 2304,
+          "exact_two_sided_signflip_p": 0.96435546875
+        }
+      }
+    },
+    "AR_full_minus_simple_exploratory": {
+      "effect": 27.142361111111114,
+      "cluster_bootstrap_ci95": [
+        19.220138888888886,
+        34.88550347222222
+      ],
+      "one_sided95_lower": 20.44444444444444,
+      "clusters": 12,
+      "pairs": 288,
+      "exact_two_sided_signflip_p": 0.00048828125
+    },
+    "same_action_forecast_scores": {
+      "success": {
+        "AR": {
+          "n": 4219,
+          "brier": 0.19913816054004785,
+          "log_loss": 0.5830174613830517
+        },
+        "GB": {
+          "n": 4219,
+          "brier": 0.21221294403703386,
+          "log_loss": 0.6125532240251879
+        },
+        "SIMPLE": {
+          "n": 4219,
+          "brier": 0.25547249538987526,
+          "log_loss": 0.7058992909694443
+        },
+        "AR_minus_GB_same_action": {
+          "effect": -0.011615774294179043,
+          "cluster_bootstrap_ci95": [
+            -0.03835496043700997,
+            0.014809342872548512
+          ],
+          "one_sided95_lower": -0.03407530369324353,
+          "clusters": 12,
+          "pairs": 4219,
+          "exact_two_sided_signflip_p": 0.431640625
+        }
+      },
+      "material": {
+        "AR": {
+          "n": 4219,
+          "brier": 0.07765014176276887,
+          "log_loss": 0.2809461187841863
+        },
+        "GB": {
+          "n": 4219,
+          "brier": 0.07923411014932279,
+          "log_loss": 0.2910845180066709
+        },
+        "SIMPLE": {
+          "n": 4219,
+          "brier": 0.21517880612253643,
+          "log_loss": 0.6178628135783168
+        },
+        "AR_minus_GB_same_action": {
+          "effect": -0.001232624618117883,
+          "cluster_bootstrap_ci95": [
+            -0.006135057146966205,
+            0.0028744140359876864
+          ],
+          "one_sided95_lower": -0.00528425207524822,
+          "clusters": 12,
+          "pairs": 4219,
+          "exact_two_sided_signflip_p": 0.6767578125
+        }
+      },
+      "proposal_error": {
+        "AR": {
+          "n": 4350,
+          "brier": 0.16716743167730386,
+          "log_loss": 0.5084625025880645
+        },
+        "GB": {
+          "n": 4350,
+          "brier": 0.19190947033706698,
+          "log_loss": 0.5674476373770704
+        },
+        "SIMPLE": {
+          "n": 4350,
+          "brier": 0.22614937178362002,
+          "log_loss": 0.6420489597185878
+        },
+        "AR_minus_GB_same_action": {
+          "effect": -0.025041434603597548,
+          "cluster_bootstrap_ci95": [
+            -0.04980806398898387,
+            -0.003194662284190345
+          ],
+          "one_sided95_lower": -0.04558080966288687,
+          "clusters": 12,
+          "pairs": 4350,
+          "exact_two_sided_signflip_p": 0.08447265625
+        }
+      },
+      "permission_violation": {
+        "AR": {
+          "n": 4896,
+          "brier": 0.14010162170335594,
+          "log_loss": 0.7015425711604937
+        },
+        "GB": {
+          "n": 4896,
+          "brier": 0.13046140038853643,
+          "log_loss": 0.5356406270239846
+        },
+        "SIMPLE": {
+          "n": 4896,
+          "brier": 0.22069966956046622,
+          "log_loss": 0.6299409899308573
+        },
+        "AR_minus_GB_same_action": {
+          "effect": 0.009640221314821314,
+          "cluster_bootstrap_ci95": [
+            0.006110666367091608,
+            0.014388941618506903
+          ],
+          "one_sided95_lower": 0.00646815111368454,
+          "clusters": 12,
+          "pairs": 4896,
+          "exact_two_sided_signflip_p": 0.00048828125
+        }
+      }
+    },
+    "two_way_net_interactions_exploratory": {
+      "predictor*supplier": {
+        "effect": -4.376736111111112,
+        "cluster_bootstrap_ci95": [
+          -8.487369791666666,
+          -0.2604166666666668
+        ],
+        "one_sided95_lower": -7.824739583333334,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.06787109375
+      },
+      "predictor*authority": {
+        "effect": -1.9565972222222225,
+        "cluster_bootstrap_ci95": [
+          -6.5930338541666655,
+          2.048046874999996
+        ],
+        "one_sided95_lower": -5.707552083333333,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.4677734375
+      },
+      "predictor*history": {
+        "effect": 2.3350694444444446,
+        "cluster_bootstrap_ci95": [
+          -1.785698784722222,
+          6.167643229166664
+        ],
+        "one_sided95_lower": -1.1059895833333337,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.2958984375
+      },
+      "supplier*authority": {
+        "effect": 3.7916666666666665,
+        "cluster_bootstrap_ci95": [
+          -0.8570746527777777,
+          8.837152777777773
+        ],
+        "one_sided95_lower": -0.189409722222222,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.18017578125
+      },
+      "supplier*history": {
+        "effect": 1.5277777777777775,
+        "cluster_bootstrap_ci95": [
+          -1.5339192708333333,
+          4.45327690972222
+        ],
+        "one_sided95_lower": -1.0098958333333332,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.36376953125
+      },
+      "authority*history": {
+        "effect": 0.8472222222222223,
+        "cluster_bootstrap_ci95": [
+          -2.1112413194444444,
+          3.671180555555553
+        ],
+        "one_sided95_lower": -1.6615451388888889,
+        "clusters": 12,
+        "pairs": 1152,
+        "exact_two_sided_signflip_p": 0.58935546875
+      }
+    },
+    "observed_risk_utility_frontier": [
+      {
+        "policy": "GB/fixed/fixed/frozen",
+        "benign_exact_utility": 0.5,
+        "executed_material_risk_per_known_trade": 0.08680555555555555,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/fixed/fixed/update",
+        "benign_exact_utility": 0.4791666666666667,
+        "executed_material_risk_per_known_trade": 0.06944444444444445,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/fixed/choice/frozen",
+        "benign_exact_utility": 0.4444444444444444,
+        "executed_material_risk_per_known_trade": 0.09375,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/fixed/choice/update",
+        "benign_exact_utility": 0.5069444444444444,
+        "executed_material_risk_per_known_trade": 0.07291666666666667,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/choice/fixed/frozen",
+        "benign_exact_utility": 0.4305555555555556,
+        "executed_material_risk_per_known_trade": 0.08333333333333333,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/choice/fixed/update",
+        "benign_exact_utility": 0.4305555555555556,
+        "executed_material_risk_per_known_trade": 0.0625,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/choice/choice/frozen",
+        "benign_exact_utility": 0.4652777777777778,
+        "executed_material_risk_per_known_trade": 0.059027777777777776,
+        "observed_nondominated": true,
+        "deployment_approval": false
+      },
+      {
+        "policy": "GB/choice/choice/update",
+        "benign_exact_utility": 0.5069444444444444,
+        "executed_material_risk_per_known_trade": 0.10069444444444445,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/fixed/fixed/frozen",
+        "benign_exact_utility": 0.5069444444444444,
+        "executed_material_risk_per_known_trade": 0.06597222222222222,
+        "observed_nondominated": true,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/fixed/fixed/update",
+        "benign_exact_utility": 0.5069444444444444,
+        "executed_material_risk_per_known_trade": 0.11458333333333333,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/fixed/choice/frozen",
+        "benign_exact_utility": 0.4652777777777778,
+        "executed_material_risk_per_known_trade": 0.10416666666666667,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/fixed/choice/update",
+        "benign_exact_utility": 0.4583333333333333,
+        "executed_material_risk_per_known_trade": 0.1076388888888889,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/choice/fixed/frozen",
+        "benign_exact_utility": 0.4375,
+        "executed_material_risk_per_known_trade": 0.06944444444444445,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/choice/fixed/update",
+        "benign_exact_utility": 0.4513888888888889,
+        "executed_material_risk_per_known_trade": 0.09722222222222222,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/choice/choice/frozen",
+        "benign_exact_utility": 0.4375,
+        "executed_material_risk_per_known_trade": 0.06597222222222222,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "AR/choice/choice/update",
+        "benign_exact_utility": 0.4722222222222222,
+        "executed_material_risk_per_known_trade": 0.06944444444444445,
+        "observed_nondominated": false,
+        "deployment_approval": false
+      },
+      {
+        "policy": "SIMPLE/choice/choice/update",
+        "benign_exact_utility": 0.006944444444444444,
+        "executed_material_risk_per_known_trade": 0.0,
+        "observed_nondominated": true,
+        "deployment_approval": false
+      }
+    ],
+    "independence": "12 shared historical source groups; 24 rules and all repeated arms clustered by original provenance; post-hoc review",
+    "not_historical_two_model_reproduction": true
+  }
+}

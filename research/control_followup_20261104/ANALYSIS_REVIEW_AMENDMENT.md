@@ -20,3 +20,22 @@ threshold or favorable rerun. The earlier independent report is preserved.
 Local/remote JSON comparisons normalize serialization; dictionary order and
 tuple/list serialization are not scientific differences. Discrete quantities
 remain exact, and float roundoff tolerance remains 1e-12.
+
+## Component cross-runtime arithmetic and shared-source review
+
+All 4,913 qualified component pilot/main trades were recomputed on Python 3.10
+against the Python 3.12 frozen values. The maximum float difference was
+4.618527782440651e-14; discrete disagreements and frozen-lock/row disagreements
+were zero. Recomputed arithmetic uses the existing 1e-12 roundoff tolerance.
+Frozen lock-to-row values and selected supplier/mode/grant remain exact.
+The raw responses, forecasts, states and acceptance criteria do not change.
+
+The preregistered component analysis used 24 authored-rule clusters. Review of
+the original reused pools confirmed **12 shared historical source groups**.
+`COMPONENT_REPRODUCTION.json` retains the original analysis. The separate
+`REVIEWED_COMPONENT_ANALYSIS.json` uses the original group mapping, with source
+file SHA provenance, for a post-hoc 12-source reanalysis. The primary estimands,
+paired rows and four-way Holm family are unchanged; no new calls are made.
+AR−GB net value remains −1.3559 (Holm4 p=.3574); supplier choice−fixed remains
+−4.0148 (Holm4 p=.0293). Neither analysis establishes an AR advantage. This
+review does not convert a post-hoc analysis into preregistered confirmation.

@@ -1,0 +1,8 @@
+{
+  "pass_gate": true,
+  "file_sha256": {
+    "organization_outcomes.csv": "f1715de8f37b18866326f9af170006d722979ec46620400cbf12bc4f7e74e04e",
+    "component_outcomes.csv": "1b36840202832d9c739b0050ee0809ac25a46a9e684a30558aa3d0790afc6014",
+    "RUNTIME_ACCOUNTING.json": "c8183a17f4220dfd672ff7a7a877b4fcd56262c7ab37c9743a447143297ddf2d"
+  }
+}

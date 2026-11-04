@@ -1,0 +1,16 @@
+{
+  "float_differences": 77076,
+  "maximum_absolute_delta": 4.618527782440651e-14,
+  "maximum_path": "6000a24f1cd6914569bfeeaf-2.choice.options.18.expected_buyer_net",
+  "discrete_mismatches": [],
+  "frozen_lock_row_mismatches": 0,
+  "maximum_pair": [
+    26.893665323261164,
+    26.893665323261118
+  ],
+  "discrete_exact": true,
+  "frozen_lock_row_exact": true,
+  "recompute_only_tolerance": 1e-12,
+  "source": "all 4913 pilot/main trades; Python3.10 recomputation against Python3.12 frozen values",
+  "raw_results_changed": false
+}

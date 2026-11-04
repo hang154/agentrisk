@@ -1,0 +1,127 @@
+{
+  "requested_followup_execution_complete": true,
+  "all_planned_outcomes_known": false,
+  "human_review": "SKIPPED_BY_USER",
+  "monitor_census": {
+    "actions": 491,
+    "judgments": 2455,
+    "new_calls": 1655,
+    "reused_calls": 800
+  },
+  "organizations": {
+    "planned": 1728,
+    "finished": 1728,
+    "known": 1721,
+    "unknown_preserved": 7,
+    "raw_calls_including_pilot": 28046,
+    "cross_workflow_superiority": "NOT_ESTABLISHED",
+    "adaptive_over_cumulative": "NOT_ESTABLISHED"
+  },
+  "components": {
+    "planned": 4896,
+    "finished": 4896,
+    "unknown": 0,
+    "raw_calls_including_valid_pilot": 19652,
+    "failed_original_pilot_preserved": 17,
+    "valid_new_pilot": 17
+  },
+  "independent_reproduction": true,
+  "parser_recoveries_audited": 39,
+  "historical_RiskRank_predictions_reproduced": 2304,
+  "historical_RiskQuote_predictions_reproduced": 1440,
+  "ControlArena_directory_export": true,
+  "native_ControlArena_plugin": false,
+  "customer_or_insurance_validation": false,
+  "backups": {
+    "epoch": 1793786699.3424387,
+    "ssd_verified": true,
+    "hdd_verified": true,
+    "distinct_filesystem_devices": true,
+    "ssd_device": 66306,
+    "hdd_device": 2065,
+    "archives": [
+      {
+        "repository_path": "artifacts/control_study_202611/SYNTHETIC_RAW_EVIDENCE.tar.gz",
+        "sha256": "1da1de0c9fde4219fc657a87db152e936cf7372092d4e7b3eb8291813a4b15c4",
+        "bytes": 7625074,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/CENSUS_ATTACKER_RAW.tar.gz",
+        "sha256": "56a9b5ec6576e0d60628ccb4126392bae8d0859a8f5349df8a7155df4ae13bf5",
+        "bytes": 4483382,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/COMPONENT_SCHEMA_V2_RAW.tar.gz",
+        "sha256": "15172cb7ccd9bbfc08846b9924aff198c0a7f78179011b2285cb5111dba9a45b",
+        "bytes": 58406258,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/ORGANIZATION_CONTINUATION_RAW.tar.gz",
+        "sha256": "525ddecde72c4c3770d67cbd2fd1214a683839561f0158ad3c7cc618ec3d820f",
+        "bytes": 81252092,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/ORGANIZATION_ORIGINAL_RAW.tar.gz",
+        "sha256": "b37cb940cc88f2bc38deae6569dac66a2c9b6d1e829aff5aba0a69dc0c050103",
+        "bytes": 40721130,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/ORGANIZATION_TRAJECTORIES.tar.gz",
+        "sha256": "0d9907e335ed3fefc4794dca0410ac62174b348ffe5e00ae48ed1ecd4a686f6d",
+        "bytes": 27646042,
+        "needed_for_reproduction": false,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/REVIEW_RUNTIME_METADATA.tar.gz",
+        "sha256": "2ccca550fe1ccbfc41df293b3d46aac00191d47c72543fea0e8b138250c8d1d8",
+        "bytes": 509915,
+        "needed_for_reproduction": true,
+        "ssd_verified": true,
+        "hdd_verified": true
+      },
+      {
+        "repository_path": "artifacts/control_followup_20261104/COMPONENT_TRAJECTORIES.tar.gz",
+        "sha256": "41363c0796546616ef8cd032aa8ea0e105b38fba5e230673f317ee4c4ed22ea3",
+        "bytes": 13467134,
+        "needed_for_reproduction": false,
+        "ssd_verified": true,
+        "hdd_verified": true
+      }
+    ],
+    "nas": {
+      "status": "BLOCKED_QUOTA",
+      "errno": 122,
+      "probe_receipt": {
+        "epoch": 1793785020.750371,
+        "path": "/home/work/timecore-ai/.agentrisk-control-followup-quota-check-1793785020750363929",
+        "bytes": 128,
+        "write_probe": "FAILED",
+        "errno": 122,
+        "error": "[Errno 122] Disk quota exceeded: '/home/work/timecore-ai/.agentrisk-control-followup-quota-check-1793785020750363929'"
+      }
+    },
+    "github_status": "TRACKED_ARCHIVES_REQUIRE_REMOTE_COMMIT_CHECK",
+    "hdd_root": "/media/hang010412/로컬 디스크/AgentRisk_backups/control_followup_20261104/public_release"
+  },
+  "gpu": 2,
+  "model_retained": true,
+  "original_results_modified": false,
+  "original_posted_requests_reissued": 0
+}

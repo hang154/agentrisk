@@ -15,6 +15,29 @@ def fixture(root):
  s.finish();return s.rows[0]
 
 class AuditorTests(unittest.TestCase):
+ def test_shared_history_lineage_is_one_cluster_for_repeated_rules(self):
+  with tempfile.TemporaryDirectory() as t:base=fixture(pathlib.Path(t))
+  rows=[]
+  for family in ['first_rule','second_rule']:
+   for arm in r.arms():
+    row=copy.deepcopy(base);row['family']=family;row['arm']=arm
+    row['buyer_net']=float(arm['predictor']=='AR');rows.append(row)
+  ordinary=audit.summarize(rows);reviewed=audit.summarize(rows,{'first_rule':'shared','second_rule':'shared'})
+  self.assertEqual(ordinary['component_effects']['predictor']['buyer_net']['clusters'],2)
+  self.assertEqual(reviewed['component_effects']['predictor']['buyer_net']['clusters'],1)
+  self.assertEqual(ordinary['summary'],reviewed['summary'])
+ def test_cross_runtime_roundoff_without_relaxing_frozen_evidence(self):
+  selected={'candidate':'supplier','limit':50};choice={'selected':selected,'score':.25};forecasts={'AR':{'p':.5}}
+  lock={'choice':copy.deepcopy(choice),'same_action_forecasts':copy.deepcopy(forecasts)}
+  row={'selected':copy.deepcopy(selected),'same_action_forecasts':copy.deepcopy(forecasts)}
+  forecasts['AR']['p']+=1e-14;choice['score']+=1e-14
+  audit.verify_forecast_contract(choice,forecasts,lock,row)
+  bad=copy.deepcopy(forecasts);bad['AR']['p']+=1e-9
+  with self.assertRaises(AssertionError):audit.verify_forecast_contract(choice,bad,lock,row)
+  bad=copy.deepcopy(choice);bad['selected']['limit']=51
+  with self.assertRaises(AssertionError):audit.verify_forecast_contract(bad,forecasts,lock,row)
+  bad=copy.deepcopy(row);bad['same_action_forecasts']['AR']['p']+=1e-14
+  with self.assertRaises(AssertionError):audit.verify_forecast_contract(choice,forecasts,lock,bad)
  def test_unknown_invoice_counts_excluded_from_utility_pairs(self):
   from .audit_organizations import analyze
   rows=[]
@@ -40,6 +63,14 @@ class AuditorTests(unittest.TestCase):
  def test_raw_tampering_rejected(self):
   with tempfile.TemporaryDirectory() as t:
    root=pathlib.Path(t);row=fixture(root);d=root/'raw'/row['calls'][0]['id']/'response.raw';d.write_text('{}')
+   with self.assertRaises(AssertionError):audit.audit(root,require_full=False,write=False)
+ def test_false_format_failure_accounting_rejected(self):
+  with tempfile.TemporaryDirectory() as t:
+   root=pathlib.Path(t);row=fixture(root);path=root/'trades'/f"{row['id']}.json";row['format_errors']=1
+   # Recompute the dependent claimed outcome too; raw-response validation must reject it.
+   _,_,_,row['outcome']=r.settle(row['contract'],row['roles'],row['selected'],row['before'],row['id'],True,1)
+   supplier=next(p for p in r.SUPPLIERS if p['id']==row['selected']['candidate']);row['buyer_net']=100*row['outcome']['success']-supplier['fee']-row['outcome']['loss']-.6
+   path.write_text(json.dumps(row))
    with self.assertRaises(AssertionError):audit.audit(root,require_full=False,write=False)
  def test_state_tampering_rejected(self):
   with tempfile.TemporaryDirectory() as t:
