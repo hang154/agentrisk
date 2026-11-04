@@ -1,10 +1,15 @@
 """Independent settlement reconstruction and paired factorial statistics."""
-import collections,copy,itertools,json,pathlib
+import collections,copy,itertools,json,pathlib,concurrent.futures
 from experiments.control_study_202611.common import sha,freeze
 from .audit_organizations import raw_check
 from .riskquote_ablation import BOOKS,SUPPLIERS,TEST,arms,choose,quote,contract,role_input,schema
 from .new_rules import RULES
 from .statistics import mean,cluster_effect,holm,binary_score
+
+def message_contract(messages):
+ # Persisted dictionaries are canonical-key sorted; JSON object key order does
+ # not change forwarded evidence. Raw byte hashes are checked independently.
+ return [{**m,'content':json.loads(m['content']) if m['role']=='user' else m['content']} for m in messages]
 
 def reconstruct(r):
  c=r['contract'];roles=r['roles'];a=roles.get('settlement',{});q=r['selected'];before=r['before'];expected=RULES[c['source_root']][1](c['canonical']['data']);assert expected==c['expected_amount'];vendor=c['expected_vendor'];tx=None;gate='NO_COMMIT'
@@ -56,23 +61,28 @@ def summarize(rows):
   panel['AR_minus_GB_same_action']=cluster_effect(diff);scores[target]=panel
  return dict(summary=summary,component_effects=effects,AR_full_minus_simple_exploratory=cluster_effect(g),same_action_forecast_scores=scores,independence='24 authored rule families; six sequential trades and all factorial arms cluster together',not_historical_two_model_reproduction=True)
 
-def audit(root):
+def audit(root,require_full=True,write=True):
  root=pathlib.Path(root);load=lambda p:json.loads(p.read_text());rows=[load(p) for p in sorted((root/'trades').glob('*.json'))];streams=collections.defaultdict(list)
  for r in rows:streams[r['stream_id']].append(r)
- calls=0
- for sid,rs in streams.items():
+ def verify_stream(rs):
+  calls=0
   rs.sort(key=lambda r:r['sequence']);state={'payments':[]};hist=copy.deepcopy(BOOKS.get(rs[0]['family'],{}))
   for p in SUPPLIERS:hist.setdefault(p['id'],[])
   for i,r in enumerate(rs):
    assert r['sequence']==i and r['before']==state;assert r['contract']==contract(r['family'],r['seed'],'ablation-shared-customer',i);reconstruct(r);lock=load(root/'forecast_locks'/f'{r["id"]}.json');ch=choose(r['contract'],r['arm'],hist,300-sum(x['amount'] for x in state['payments']));assert ch==lock['choice'] and ch['selected']==r['selected'];assert lock['pre_state_sha256']==sha(state) and lock['history_sha256']==sha(hist);p=next(p for p in SUPPLIERS if p['id']==r['selected']['candidate'])
    matched={k:quote(r['contract'],p,r['selected']['mode'],r['selected']['limit'],hist[p['id']],k) for k in ['AR','GB','SIMPLE']};assert matched==lock['same_action_forecasts']==r['same_action_forecasts'];roles={};outputs=0
    for j,c in enumerate(r['calls']):
-    q,z,dispatch=raw_check(root,c);role=['manager','executor','reviewer','settlement'][j];assert c['role']==role and dispatch['time']>=lock['epoch'];assert q['seed']==r['seed']+i*10+j;assert q['response_format']['json_schema']['schema']==schema(role);assert q['messages']==role_input(r['contract'],p,role,roles,dict(r['selected'],remaining=ch['remaining']),r['id']);outputs+=c['usage']['completion_tokens'];calls+=1
+    q,z,dispatch=raw_check(root,c);role=['manager','executor','reviewer','settlement'][j];assert c['role']==role and dispatch['time']>=lock['epoch'];assert q['seed']==r['seed']+i*10+j;assert q['response_format']['json_schema']['schema']==schema(role);assert message_contract(q['messages'])==message_contract(role_input(r['contract'],p,role,roles,dict(r['selected'],remaining=ch['remaining']),r['id']));outputs+=c['usage']['completion_tokens'];calls+=1
     if role in r['roles']:assert json.loads(z['choices'][0]['message']['content'])==r['roles'][role];roles[role]=r['roles'][role]
    assert outputs==r['output_tokens'] and outputs+r['missing_output_upper_bound']<=32768
    if r['arm']['history']=='update':hist[p['id']].append(dict(id=r['id'],status='complete' if r['outcome']['known'] else 'unknown',workflow=r['family'],mode=r['selected']['mode'],limit=r['selected']['limit'],**{k:(r['outcome']['read_success'] if k=='success' and r['selected']['mode']=='read' else r['outcome'][k]) for k in ['proposal_error','permission_violation','material','success']}))
    state=r['after']
- main=[r for r in rows if not r['pilot']];expected={(f,s,sha(a),i) for f,s,a,i in itertools.product(TEST,[8101,8102],arms(),range(6))};assert {(r['family'],r['seed'],sha(r['arm']),r['sequence']) for r in main}==expected and len(main)==4896
- result=dict(pass_gate=True,trades=len(main),pilot_trades=len(rows)-len(main),raw_calls=calls,unknown=sum(not r['outcome']['known'] for r in main),analysis=summarize(main));freeze(root/'INDEPENDENT_REPRODUCTION.json',result);return result
+  return calls
+ with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:calls=sum(pool.map(verify_stream,streams.values()))
+ main=[r for r in rows if not r['pilot']];expected={(f,s,sha(a),i) for f,s,a,i in itertools.product(TEST,[8101,8102],arms(),range(6))}
+ if require_full:assert {(r['family'],r['seed'],sha(r['arm']),r['sequence']) for r in main}==expected and len(main)==4896
+ result=dict(pass_gate=True,trades=len(main),pilot_trades=len(rows)-len(main),raw_calls=calls,unknown=sum(not r['outcome']['known'] for r in main),full_grid_checked=require_full,analysis=summarize(main) if require_full else None)
+ if write:freeze(root/('INDEPENDENT_REPRODUCTION.json' if require_full else 'PARTIAL_REPRODUCTION.json'),result)
+ return result
 if __name__=='__main__':
  import sys;r=audit(sys.argv[1]);print(json.dumps({k:v for k,v in r.items() if k!='analysis'}))

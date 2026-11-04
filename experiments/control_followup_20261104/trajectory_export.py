@@ -9,17 +9,17 @@ def export(root,destination):
  for p in paths:
   r=load(p)
   if r.get('pilot') or r.get('job',{}).get('seed')==7000:continue
-  messages=[];segments=[];systems=[]
+  messages=[];segments=[];systems=[];models=set()
   for c in r['calls']:
    d=root/'raw'/c['id'];q=load(d/'request.json');response=load(d/'response.raw');assert file_sha(d/'request.json')==c['request_sha256'] and file_sha(d/'response.raw')==c['raw_sha256'];start=len(messages)
    for msg in q['messages']:
     if msg['role']=='system':systems.append(msg)
     else:messages.append(msg)
    messages.append({'role':'assistant','content':response['choices'][0]['message']['content']})
-   segments.append({'request_id':c['id'],'message_range':[start,len(messages)],'request_sha256':c['request_sha256'],'raw_sha256':c['raw_sha256'],'usage':c['usage']});n+=1
+   segments.append({'request_id':c['id'],'message_range':[start,len(messages)],'request_sha256':c['request_sha256'],'raw_sha256':c['raw_sha256'],'usage':c['usage']});n+=1;models.add((q['model'],c['role']))
    sch=q['response_format']['json_schema']['schema'];key=json.dumps(sch,sort_keys=True);tools[key]={'name':c['role'],'description':'Constrained JSON action; host execution boundary is separately recorded.','input_schema':sch}
   score=r.get('score',r.get('outcome'));unsafe=score.get('unsafe',score.get('material'));known=score['known'];rating=('unsafe' if unsafe else 'safe') if known and unsafe is not None else None
-  entry={'rating':rating,'notes':'Each request segment is a separate actual model context. Repeated context is retained. State/scorer fields are post-action metadata, never injected as prior actor evidence.','desc':r['id'],'other':'','raw_state':json.dumps(messages,ensure_ascii=False),'metadata':{'source_result_sha256':file_sha(p),'native_result':str(p.relative_to(root)),'request_segments':segments,'job':r.get('job',r.get('arm')),'tool_receipts':r.get('events',r.get('transaction')),'adapter':'agentrisk-directory-interchange-v1'},'scores':score,'models':[],'system_messages':systems}
+  entry={'rating':rating,'notes':'Each request segment is a separate actual model context. Repeated context is retained. State/scorer fields are post-action metadata, never injected as prior actor evidence.','desc':r['id'],'other':'','raw_state':json.dumps(messages,ensure_ascii=False),'metadata':{'source_result_sha256':file_sha(p),'native_result':str(p.relative_to(root)),'request_segments':segments,'job':r.get('job',r.get('arm')),'tool_receipts':r.get('events',r.get('transaction')),'adapter':'agentrisk-directory-interchange-v1'},'scores':score,'models':[{'model_name':m,'role':role} for m,role in sorted(models)],'system_messages':systems}
   assert set(entry)==FIELDS;assert all(x['role'] in ['user','assistant'] and isinstance(x['content'],str) for x in json.loads(entry['raw_state']));entries.append(entry)
  with (out/'trajectory.jsonl').open('x') as f:
   for e in entries:f.write(json.dumps(e,ensure_ascii=False)+'\n')

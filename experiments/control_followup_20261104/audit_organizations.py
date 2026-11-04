@@ -1,5 +1,5 @@
 """Independent raw-to-state reconstruction; does not call execution/oracle/Control code."""
-import collections,copy,json,pathlib
+import collections,copy,json,pathlib,concurrent.futures
 from experiments.control_study_202611.common import sha,file_sha,freeze
 from .statistics import mean,cluster_effect,holm
 
@@ -89,10 +89,12 @@ def itertools_group(rows):
  g=collections.defaultdict(list)
  for r in rows:g[tuple(r['job'][k] for k in ['agents','sessions','sharing','arm'])].append(r)
  return sorted(g.items())
-def audit(root):
+def audit(root,write=True):
  root=pathlib.Path(root);load=lambda p:json.loads(p.read_text());tasks={t['task_id']:t for t in load(root/'TASK_BANK.json')};prior=load(root/'FROZEN_MODEL.json');rows=[load(p) for p in sorted((root/'teams').glob('*.json'))];n=0
- for r in rows:n+=verify_team(root,r,tasks[r['task_id']],prior)
+ with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:n=sum(pool.map(lambda r:verify_team(root,r,tasks[r['task_id']],prior),rows))
  main=[r for r in rows if r['job']['seed'] in [7101,7102]];queue=load(root/'ORG_QUEUE.json');assert len(main)==1728 and {sha(r['job']) for r in main}=={sha(j) for j in queue}
- result=dict(pass_gate=True,main_teams=len(main),pilot_teams=len(rows)-len(main),raw_calls_verified=n,unknown=sum(not r['score']['known'] for r in main),analysis=analyze(main));freeze(root/'INDEPENDENT_REPRODUCTION.json',result);return result
+ result=dict(pass_gate=True,main_teams=len(main),pilot_teams=len(rows)-len(main),raw_calls_verified=n,unknown=sum(not r['score']['known'] for r in main),analysis=analyze(main))
+ if write:freeze(root/'INDEPENDENT_REPRODUCTION.json',result)
+ return result
 if __name__=='__main__':
  import sys;r=audit(sys.argv[1]);print(json.dumps({k:v for k,v in r.items() if k!='analysis'}))
