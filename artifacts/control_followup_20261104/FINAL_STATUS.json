@@ -117,11 +117,16 @@
         "error": "[Errno 122] Disk quota exceeded: '/home/work/timecore-ai/.agentrisk-control-followup-quota-check-1793785020750363929'"
       }
     },
-    "github_status": "TRACKED_ARCHIVES_REQUIRE_REMOTE_COMMIT_CHECK",
-    "hdd_root": "/media/hang010412/로컬 디스크/AgentRisk_backups/control_followup_20261104/public_release"
+    "github_status": "VERIFIED",
+    "hdd_root": "/media/hang010412/로컬 디스크/AgentRisk_backups/control_followup_20261104/public_release",
+    "github_verified_commit": "b9f54f0b48f4b978f7e1beaee06eaaf613ddc673",
+    "github_receipt": "GITHUB_BACKUP_RECEIPT.json"
   },
   "gpu": 2,
   "model_retained": true,
   "original_results_modified": false,
-  "original_posted_requests_reissued": 0
+  "original_posted_requests_reissued": 0,
+  "research_hypotheses_all_confirmed": false,
+  "github_verified_commit": "b9f54f0b48f4b978f7e1beaee06eaaf613ddc673",
+  "source_report_hdd_backup": true
 }

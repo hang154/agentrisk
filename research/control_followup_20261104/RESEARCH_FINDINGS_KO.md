@@ -104,6 +104,7 @@ AR 전체 구성은 보수적인 SIMPLE 정책보다 순가치가 높았지만, 
 
 로컬과 원격의 원시 상태 재구성·판정·분모를 대조했습니다. 정수·판정은 정확 비교하고, Python 부동소수점 차이에만 10⁻¹² 허용치를 적용했습니다. 결과·요청·응답·예측 잠금·실패·프로토콜과 파일 SHA를 공개 패키지에 포함했습니다.
 SSD·별도 HDD 읽기 후 SHA 검증을 통과했습니다. NAS 쓰기는 재확인에서도 errno 122(할당량 초과)로 거부됐으며 기존 NAS 자료는 삭제하지 않았습니다. 공개 아카이브는 8개이며 파일별 검증 목록을 제공합니다.
+GitHub의 [증빙 커밋](https://github.com/hang154/agentrisk/commit/b9f54f0b48f4b978f7e1beaee06eaaf613ddc673)과 원격 HEAD 일치를 확인했습니다. 코드·보고서 100개 파일도 별도로 HDD에 백업하고 읽기 후 SHA를 검사했습니다.
 [재현 방법](README.md) · [영문 요약](RESEARCH_BRIEF_EN.md) · [최종 상태](../../artifacts/control_followup_20261104/FINAL_STATUS.json) · [전체 결과](../../artifacts/control_followup_20261104/COMPONENT_REPRODUCTION.json)
 
 실행 완료와 연구 가설의 성공은 구분합니다. 이번 후속 연구는 실행 증거 기반 모니터링의 유용한 신호와 공유 이력의 중요성을 보여 주지만, 적응형 위험 점수의 일반적인 안전성–효용 우위를 확증하지는 못했습니다.

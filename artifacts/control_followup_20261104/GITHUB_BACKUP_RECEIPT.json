@@ -1,0 +1,51 @@
+{
+  "pass_gate": true,
+  "remote_head_verified": true,
+  "repository": "https://github.com/hang154/agentrisk",
+  "ref": "refs/heads/main",
+  "verified_commit": "b9f54f0b48f4b978f7e1beaee06eaaf613ddc673",
+  "archives": [
+    {
+      "path": "artifacts/control_study_202611/SYNTHETIC_RAW_EVIDENCE.tar.gz",
+      "sha256": "1da1de0c9fde4219fc657a87db152e936cf7372092d4e7b3eb8291813a4b15c4",
+      "git_blob": "e241eabe1788616a8957da76496ae7ac2abfc140"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/CENSUS_ATTACKER_RAW.tar.gz",
+      "sha256": "56a9b5ec6576e0d60628ccb4126392bae8d0859a8f5349df8a7155df4ae13bf5",
+      "git_blob": "562480120f7d8950545b6ce9fca86132d08ac71e"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/COMPONENT_SCHEMA_V2_RAW.tar.gz",
+      "sha256": "15172cb7ccd9bbfc08846b9924aff198c0a7f78179011b2285cb5111dba9a45b",
+      "git_blob": "abb4573e4a1258e81aae7a1fe144b859cd622f38"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/ORGANIZATION_CONTINUATION_RAW.tar.gz",
+      "sha256": "525ddecde72c4c3770d67cbd2fd1214a683839561f0158ad3c7cc618ec3d820f",
+      "git_blob": "e54465b3b0dcd9f2c45fe5ef12d0b8354ec6ab18"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/ORGANIZATION_ORIGINAL_RAW.tar.gz",
+      "sha256": "b37cb940cc88f2bc38deae6569dac66a2c9b6d1e829aff5aba0a69dc0c050103",
+      "git_blob": "271f2f5507f3c07f177f59e671a135bd6c58e9da"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/ORGANIZATION_TRAJECTORIES.tar.gz",
+      "sha256": "0d9907e335ed3fefc4794dca0410ac62174b348ffe5e00ae48ed1ecd4a686f6d",
+      "git_blob": "fd2d172311585cee72311d8cd2d71fef58f2b7f8"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/REVIEW_RUNTIME_METADATA.tar.gz",
+      "sha256": "2ccca550fe1ccbfc41df293b3d46aac00191d47c72543fea0e8b138250c8d1d8",
+      "git_blob": "a311a0751c9ecdccae968c5d1be17a1d2989308b"
+    },
+    {
+      "path": "artifacts/control_followup_20261104/COMPONENT_TRAJECTORIES.tar.gz",
+      "sha256": "41363c0796546616ef8cd032aa8ea0e105b38fba5e230673f317ee4c4ed22ea3",
+      "git_blob": "5f62256c0d88a14fd6fe986dc5b04024a897ce81"
+    }
+  ],
+  "epoch": 1793787197.7370787,
+  "method": "successful Git push plus ls-remote exact commit; all archive blob IDs resolved in that commit"
+}

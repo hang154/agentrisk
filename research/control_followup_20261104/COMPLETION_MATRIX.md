@@ -18,5 +18,6 @@
 | 원시 자료 복원·독립 재분석 | PASS | [FINAL_REPRODUCTION.json](../../artifacts/control_followup_20261104/FINAL_REPRODUCTION.json) | 공개 아카이브 복원본에서 검산; 신규 추론 0건 |
 | 코드·결과 표 재생성 검사 | PASS | [TEST_VALIDATION.json](../../artifacts/control_followup_20261104/TEST_VALIDATION.json) | 59개 테스트 및 CSV 정확 재생성 |
 | SSD·HDD 증빙 백업 | PASS | [BACKUP_VERIFICATION.json](../../artifacts/control_followup_20261104/BACKUP_VERIFICATION.json) | 별도 파일시스템 8개 아카이브 읽기 후 SHA 일치 |
+| GitHub 및 코드·보고서 백업 | PASS | [GITHUB_BACKUP_RECEIPT.json](../../artifacts/control_followup_20261104/GITHUB_BACKUP_RECEIPT.json) | 원격 커밋 일치·아카이브 blob 확인; 소스·보고서 별도 HDD 백업 |
 | NAS 쓰기 | BLOCKED_QUOTA | [BACKUP_VERIFICATION.json](../../artifacts/control_followup_20261104/BACKUP_VERIFICATION.json) | errno 122 보존; 기존 자료 삭제 없이 SSD·HDD·GitHub 경로 사용 |
 | GPU2 서비스 보존 | PASS | [SERVICE_FINAL_STATUS.json](../../artifacts/control_followup_20261104/SERVICE_FINAL_STATUS.json) | GPT-OSS API 유지, 실험 대기 요청 0건; 다른 GPU 변경 없음 |

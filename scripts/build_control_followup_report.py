@@ -10,6 +10,7 @@ def main():
  assert all(x['pass_gate'] for x in [m,o,c,repro,parser]);assert c['trades']==4896 and o['main_teams']==1728;assert backups['ssd_verified'] and backups['hdd_verified']
  assert load('ORGANIZATION_EXPORT_VALIDATION.json')['pass'] and load('COMPONENT_EXPORT_VALIDATION.json')['pass']
  assert load('TEST_VALIDATION.json')['pass_gate'] and load('TABLE_REPRODUCTION.json')['pass_gate'] and load('COMPONENT_LINEAGE_INDEPENDENT_CHECK.json')['pass_gate']
+ github=load('GITHUB_BACKUP_RECEIPT.json');assert github['pass_gate'] and load('SOURCE_REPORT_BACKUP.json')['pass_gate']
  ca=load('REVIEWED_COMPONENT_ANALYSIS.json')['analysis'];runtime=load('RUNTIME_ACCOUNTING.json')['components_schema_v2'];lines=['# AgentRisk Control Study — 잔여 목표 검토·보완 결과','',
  '기존 V1 결과와 실패 기록을 보존한 채 후속 실행·독립 검산·재현 코드·백업을 완료했습니다. 사람 블라인드 이중 검토는 사용자의 “스킵” 지시에 따라 제외했으며, 사람 판정이 수행됐다고 표시하지 않습니다.','',
  '| 실행 단위 | 완료 | 판정·비고 |','|---|---:|---|',
@@ -59,10 +60,12 @@ def main():
  f"회귀 테스트 {load('TEST_VALIDATION.json')['total']}개와 결과 CSV·토큰 회계의 정확 재생성을 통과했습니다.",'',
  '로컬과 원격의 원시 상태 재구성·판정·분모를 대조했습니다. 정수·판정은 정확 비교하고, Python 부동소수점 차이에만 10⁻¹² 허용치를 적용했습니다. 결과·요청·응답·예측 잠금·실패·프로토콜과 파일 SHA를 공개 패키지에 포함했습니다.',
  f"SSD·별도 HDD 읽기 후 SHA 검증을 통과했습니다. NAS 쓰기는 재확인에서도 errno 122(할당량 초과)로 거부됐으며 기존 NAS 자료는 삭제하지 않았습니다. 공개 아카이브는 {len(archives['archives'])}개이며 파일별 검증 목록을 제공합니다.",
+ f"GitHub의 [증빙 커밋](https://github.com/hang154/agentrisk/commit/{github['verified_commit']})과 원격 HEAD 일치를 확인했습니다. 코드·보고서 100개 파일도 별도로 HDD에 백업하고 읽기 후 SHA를 검사했습니다.",
  '[재현 방법](README.md) · [영문 요약](RESEARCH_BRIEF_EN.md) · [최종 상태](../../artifacts/control_followup_20261104/FINAL_STATUS.json) · [전체 결과](../../artifacts/control_followup_20261104/COMPONENT_REPRODUCTION.json)',
  '', '실행 완료와 연구 가설의 성공은 구분합니다. 이번 후속 연구는 실행 증거 기반 모니터링의 유용한 신호와 공유 이력의 중요성을 보여 주지만, 적응형 위험 점수의 일반적인 안전성–효용 우위를 확증하지는 못했습니다.']
  (d/'RESEARCH_FINDINGS_KO.md').write_text('\n'.join(lines)+'\n')
  final={'requested_followup_execution_complete':True,'all_planned_outcomes_known':o['unknown']+c['unknown']==0,'human_review':'SKIPPED_BY_USER','monitor_census':{'actions':491,'judgments':2455,'new_calls':1655,'reused_calls':800},'organizations':{'planned':1728,'finished':1728,'known':1728-o['unknown'],'unknown_preserved':o['unknown'],'raw_calls_including_pilot':o['raw_calls_verified'],'cross_workflow_superiority':'NOT_ESTABLISHED','adaptive_over_cumulative':'NOT_ESTABLISHED'},'components':{'planned':4896,'finished':c['trades'],'unknown':c['unknown'],'raw_calls_including_valid_pilot':c['raw_calls'],'failed_original_pilot_preserved':17,'valid_new_pilot':c['pilot_trades']},'independent_reproduction':True,'parser_recoveries_audited':parser['recoveries'],'historical_RiskRank_predictions_reproduced':2304,'historical_RiskQuote_predictions_reproduced':1440,'ControlArena_directory_export':True,'native_ControlArena_plugin':False,'customer_or_insurance_validation':False,'backups':backups,'gpu':2,'model_retained':True,'original_results_modified':False,'original_posted_requests_reissued':0}
+ final.update(research_hypotheses_all_confirmed=False,github_verified_commit=github['verified_commit'],source_report_hdd_backup=True)
  (a/'FINAL_STATUS.json').write_text(json.dumps(final,ensure_ascii=False,indent=2)+'\n')
  checks=[
   ('사람 블라인드 이중 검토','SKIPPED_BY_USER','HUMAN_REVIEW_WAIVER.json','156건 패키지 보존; 실제 사람 검토 0건'),
@@ -79,6 +82,7 @@ def main():
   ('원시 자료 복원·독립 재분석','PASS','FINAL_REPRODUCTION.json','공개 아카이브 복원본에서 검산; 신규 추론 0건'),
   ('코드·결과 표 재생성 검사','PASS','TEST_VALIDATION.json',str(load('TEST_VALIDATION.json')['total'])+'개 테스트 및 CSV 정확 재생성'),
   ('SSD·HDD 증빙 백업','PASS','BACKUP_VERIFICATION.json','별도 파일시스템 8개 아카이브 읽기 후 SHA 일치'),
+  ('GitHub 및 코드·보고서 백업','PASS','GITHUB_BACKUP_RECEIPT.json','원격 커밋 일치·아카이브 blob 확인; 소스·보고서 별도 HDD 백업'),
   ('NAS 쓰기','BLOCKED_QUOTA','BACKUP_VERIFICATION.json','errno 122 보존; 기존 자료 삭제 없이 SSD·HDD·GitHub 경로 사용'),
   ('GPU2 서비스 보존','PASS','SERVICE_FINAL_STATUS.json','GPT-OSS API 유지, 실험 대기 요청 0건; 다른 GPU 변경 없음')]
  (a/'COMPLETION_MATRIX.json').write_text(json.dumps({'scope':'PROTOCOL.md work tracks; execution completion is separate from scientific superiority','checks':[dict(requirement=w,status=s,artifact=f,detail=x) for w,s,f,x in checks]},ensure_ascii=False,indent=2)+'\n')

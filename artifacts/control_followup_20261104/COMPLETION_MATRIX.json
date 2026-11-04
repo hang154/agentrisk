@@ -86,6 +86,12 @@
       "detail": "별도 파일시스템 8개 아카이브 읽기 후 SHA 일치"
     },
     {
+      "requirement": "GitHub 및 코드·보고서 백업",
+      "status": "PASS",
+      "artifact": "GITHUB_BACKUP_RECEIPT.json",
+      "detail": "원격 커밋 일치·아카이브 blob 확인; 소스·보고서 별도 HDD 백업"
+    },
+    {
       "requirement": "NAS 쓰기",
       "status": "BLOCKED_QUOTA",
       "artifact": "BACKUP_VERIFICATION.json",
