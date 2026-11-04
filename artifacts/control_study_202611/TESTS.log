@@ -1,0 +1,31 @@
+test_baseline_scored_even_if_research_predictor_abstains (experiments.control_study_202611.test_analysis.AnalysisTests) ... ok
+test_gbdt_deterministic_probability (experiments.control_study_202611.test_analysis.AnalysisTests) ... ok
+test_missing_pair_does_not_become_safe (experiments.control_study_202611.test_analysis.AnalysisTests) ... ok
+test_seeds_not_independent_clusters (experiments.control_study_202611.test_analysis.AnalysisTests) ... ok
+test_adaptive_only_past_updates (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_all_oracle_positive_negative_controls (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_allblock_fails_utility (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_b4_cannot_relax_hardgate (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_blocked_attempt_not_incident (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_deterministic_controls (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_duplicate_execution_detected (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_identity_gate (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_immutable_artifact (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_mutable_receipts_are_copied (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_new_root_no_leakage (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_no_test_labels_in_actor (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_nonmutation_no_damage (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_population_and_separation (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_post_action_views_and_future_separation (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_pre_action_no_future_label (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_predecessor_corruption_detected (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_tamper_rejected (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_unknown_is_not_zero (experiments.control_study_202611.test_study.StudyTests) ... ok
+test_interrupted_lease_not_reissued (experiments.control_study_202611.test_transport.TransportTests) ... ok
+test_offline_production_semantics_all_policies (experiments.control_study_202611.test_transport.TransportTests) ... ok
+test_once_only_and_immutable_raw (experiments.control_study_202611.test_transport.TransportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.756s
+
+OK

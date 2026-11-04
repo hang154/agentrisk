@@ -1,0 +1,1 @@
+{"command":"python3 -m unittest discover -s experiments/control_study_202611 -t . -v","log_sha256":"db7f5cbf3ca7364a313c99276193783fe6f9f89bf8eafd92b6494a0bc22e4de0","passed":true,"tests":26,"type":"CPU instrument, fault-injection, transport and analysis tests; not GPU model execution"}
