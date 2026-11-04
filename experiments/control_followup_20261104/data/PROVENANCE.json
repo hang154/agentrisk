@@ -1,0 +1,11 @@
+{
+  "source": "agent_company_riskquote_repeat16_20261026",
+  "model_file_sha256": "60f9ab81a5d72fcce97714a4940699af67d7a1478455b5b551f22175ef870ebf",
+  "suppliers": 5,
+  "checkpoint_actor": "gptoss only, same checkpoint; suppliers differ in actual style and role routing",
+  "new_population": "same 24 authored rules, fresh seeds; not novel workflow validation",
+  "files": {
+    "new_rules.py": "6e7d0c90b0ce792928ccb8694ff931f7f5886ea14156ae429ff489a98c0278fa",
+    "company_corpus.py": "a5fb8723f991e595d0cf6e3a664ef8ac9b609a9fbe051a40705b6b312f900319"
+  }
+}
