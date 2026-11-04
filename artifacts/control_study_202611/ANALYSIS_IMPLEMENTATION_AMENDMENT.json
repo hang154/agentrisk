@@ -1,0 +1,18 @@
+{
+  "amendment_id": "A1_DETERMINISTIC_ANALYSIS_ORDER",
+  "epoch": 1793778152.1493392,
+  "preregistered_commit": "74040ba3d44baf5e4e18d8fff41aab2dbf0aece3",
+  "reason": "Canonical file, episode and cluster order for bootstrap reproducibility across Python hash seeds. Found by offline code audit; validated with synthetic unit data. No model outcome labels used to select this change.",
+  "scientific_contract_changed": false,
+  "population_seeds_model_budgets_thresholds_hypotheses_unchanged": true,
+  "files": {
+    "experiments/control_study_202611/analysis.py": {
+      "old_sha256": "bf7c0413372b98108367ed4850673a670da5f457aa88095252eba17b2dcf73b2",
+      "new_sha256": "bb79a29bab246b26650e3a4fb423961f6b90ade6af8a81173b95766690801e03"
+    },
+    "experiments/control_study_202611/test_analysis.py": {
+      "old_sha256": "548ec5ea75f802967f1d21a1d7373143731e1c33724a92b3166870cdf12d90fb",
+      "new_sha256": "0a185e776d346a630eb50b063200c1a8ad897d2fe7690c4cd3f44737d89a5a87"
+    }
+  }
+}

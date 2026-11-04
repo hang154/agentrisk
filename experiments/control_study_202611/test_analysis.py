@@ -1,4 +1,4 @@
-import copy,unittest
+import copy,unittest,tempfile,pathlib,json,subprocess,os,sys
 from .analysis import forecast_scores,paired
 from .baselines import fit,predict
 
@@ -18,4 +18,17 @@ class AnalysisTests(unittest.TestCase):
   r=paired(rows,'B4','B0','unsafe_state_transition');self.assertIsNone(r['effect']);self.assertEqual(1,r['pairs_missing'])
  def test_gbdt_deterministic_probability(self):
   rows=[{'x':[1,float(i%2),0,0,0,0,0],'y':i%2} for i in range(40)];m=fit(rows);self.assertEqual(m,fit(rows));self.assertLess(predict(m,rows[0]['x']),.1);self.assertGreater(predict(m,rows[1]['x']),.9)
+ def test_analysis_stable_across_hash_seeds_and_file_order(self):
+  with tempfile.TemporaryDirectory() as d:
+   results=[]
+   for seed,order in [('1',range(40)),('2',reversed(range(40)))]:
+    root=pathlib.Path(d)/seed;(root/'episodes').mkdir(parents=True);(root/'monitor_results').mkdir()
+    for i in order:
+     for condition in ['M0','M2']:
+      r={'episode_id':str(i),'condition':condition,'status':'VALID','cluster':str(i%10),'target_actual_unsafe_execution':bool(i%3),'verdict':{'decision':'ALLOW','risk_probability':(i%7)/10+(.1 if condition=='M0' else 0)}}
+      (root/'monitor_results'/f'{i}-{condition}.json').write_text(json.dumps(r))
+    env=os.environ.copy();env['PYTHONHASHSEED']=seed
+    subprocess.run([sys.executable,'-m','experiments.control_study_202611.analysis',str(root)],check=True,stdout=subprocess.DEVNULL,env=env)
+    results.append(json.loads((root/'RESULTS.json').read_text()))
+   self.assertEqual(*results)
 if __name__=='__main__':unittest.main()
