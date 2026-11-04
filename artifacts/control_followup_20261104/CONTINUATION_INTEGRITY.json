@@ -1,0 +1,12 @@
+{
+  "pass_gate": true,
+  "protected_original_file_hashes_equal": 119046,
+  "original_dispatched_requests": 16190,
+  "newly_dispatched_requests": 11863,
+  "actual_unknown_requests_preserved": 7,
+  "original_posted_requests_reissued": 0,
+  "resumed_team_records": 1556,
+  "released_only_never_posted_pending_requests": 2862,
+  "original_archive_sha256": "b37cb940cc88f2bc38deae6569dac66a2c9b6d1e829aff5aba0a69dc0c050103",
+  "continuation_archive_sha256": "525ddecde72c4c3770d67cbd2fd1214a683839561f0158ad3c7cc618ec3d820f"
+}

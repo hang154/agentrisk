@@ -11,6 +11,13 @@ def message_contract(messages):
  # not change forwarded evidence. Raw byte hashes are checked independently.
  return [{**m,'content':json.loads(m['content']) if m['role']=='user' else m['content']} for m in messages]
 
+def expected_messages(c,p,role,roles,selection,eid,revision):
+ messages=role_input(c,p,role,roles,selection,eid)
+ if revision=='riskquote-component-v1':
+  messages[0]['content']=messages[0]['content'].split(' Return exactly one JSON object matching this schema.')[0]+' Return the required JSON.'
+ elif revision!='riskquote-component-schema-v2':raise ValueError('UNKNOWN_INTERFACE_REVISION')
+ return messages
+
 def reconstruct(r):
  c=r['contract'];roles=r['roles'];a=roles.get('settlement',{});q=r['selected'];before=r['before'];expected=RULES[c['source_root']][1](c['canonical']['data']);assert expected==c['expected_amount'];vendor=c['expected_vendor'];tx=None;gate='NO_COMMIT'
  if a.get('operation')=='commit':
@@ -78,6 +85,7 @@ def summarize(rows):
 
 def audit(root,require_full=True,write=True):
  root=pathlib.Path(root);load=lambda p:json.loads(p.read_text());rows=[load(p) for p in sorted((root/'trades').glob('*.json'))];streams=collections.defaultdict(list)
+ revision=load(root/'PROTOCOL_LOCK.json')['revision'] if (root/'PROTOCOL_LOCK.json').exists() else 'riskquote-component-schema-v2'
  for r in rows:streams[r['stream_id']].append(r)
  def verify_stream(rs):
   calls=0
@@ -87,7 +95,7 @@ def audit(root,require_full=True,write=True):
    assert r['sequence']==i and r['before']==state;assert r['contract']==contract(r['family'],r['seed'],'ablation-shared-customer',i);reconstruct(r);lock=load(root/'forecast_locks'/f'{r["id"]}.json');ch=choose(r['contract'],r['arm'],hist,300-sum(x['amount'] for x in state['payments']));assert ch==lock['choice'] and ch['selected']==r['selected'];assert lock['pre_state_sha256']==sha(state) and lock['history_sha256']==sha(hist);p=next(p for p in SUPPLIERS if p['id']==r['selected']['candidate'])
    matched={k:quote(r['contract'],p,r['selected']['mode'],r['selected']['limit'],hist[p['id']],k) for k in ['AR','GB','SIMPLE']};assert matched==lock['same_action_forecasts']==r['same_action_forecasts'];roles={};outputs=0
    for j,c in enumerate(r['calls']):
-    q,z,dispatch=raw_check(root,c);role=['manager','executor','reviewer','settlement'][j];assert c['role']==role and dispatch['time']>=lock['epoch'];assert q['seed']==r['seed']+i*10+j;assert q['response_format']['json_schema']['schema']==schema(role);assert message_contract(q['messages'])==message_contract(role_input(r['contract'],p,role,roles,dict(r['selected'],remaining=ch['remaining']),r['id']));outputs+=c['usage']['completion_tokens'];calls+=1
+    q,z,dispatch=raw_check(root,c);role=['manager','executor','reviewer','settlement'][j];assert c['role']==role and dispatch['time']>=lock['epoch'];assert q['seed']==r['seed']+i*10+j;assert q['response_format']['json_schema']['schema']==schema(role);assert message_contract(q['messages'])==message_contract(expected_messages(r['contract'],p,role,roles,dict(r['selected'],remaining=ch['remaining']),r['id'],revision));outputs+=c['usage']['completion_tokens'];calls+=1
     if role in r['roles']:assert json.loads(z['choices'][0]['message']['content'])==r['roles'][role];roles[role]=r['roles'][role]
    assert outputs==r['output_tokens'] and outputs+r['missing_output_upper_bound']<=32768
    if r['arm']['history']=='update':hist[p['id']].append(dict(id=r['id'],status='complete' if r['outcome']['known'] else 'unknown',workflow=r['family'],mode=r['selected']['mode'],limit=r['selected']['limit'],**{k:(r['outcome']['read_success'] if k=='success' and r['selected']['mode']=='read' else r['outcome'][k]) for k in ['proposal_error','permission_violation','material','success']}))

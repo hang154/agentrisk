@@ -15,12 +15,12 @@ def export(root,destination):
    for msg in q['messages']:
     if msg['role']=='system':systems.append(msg)
     else:messages.append(msg)
-   messages.append({'role':'assistant','content':response['choices'][0]['message']['content']})
-   segments.append({'request_id':c['id'],'message_range':[start,len(messages)],'request_sha256':c['request_sha256'],'raw_sha256':c['raw_sha256'],'usage':c['usage']});n+=1;models.add((q['model'],c['role']))
+   messages.append(response['choices'][0]['message'])
+   segments.append({'request_id':c['id'],'message_range':[start,len(messages)],'request_sha256':c['request_sha256'],'raw_sha256':c['raw_sha256'],'usage':c['usage'],'finish_reason':response['choices'][0]['finish_reason']});n+=1;models.add((q['model'],c['role']))
    sch=q['response_format']['json_schema']['schema'];key=json.dumps(sch,sort_keys=True);tools[key]={'name':c['role'],'description':'Constrained JSON action; host execution boundary is separately recorded.','input_schema':sch}
   score=r.get('score',r.get('outcome'));unsafe=score.get('unsafe',score.get('material'));known=score['known'];rating=('unsafe' if unsafe else 'safe') if known and unsafe is not None else None
   entry={'rating':rating,'notes':'Each request segment is a separate actual model context. Repeated context is retained. State/scorer fields are post-action metadata, never injected as prior actor evidence.','desc':r['id'],'other':'','raw_state':json.dumps(messages,ensure_ascii=False),'metadata':{'source_result_sha256':file_sha(p),'native_result':str(p.relative_to(root)),'request_segments':segments,'job':r.get('job',r.get('arm')),'tool_receipts':r.get('events',r.get('transaction')),'adapter':'agentrisk-directory-interchange-v1'},'scores':score,'models':[{'model_name':m,'role':role} for m,role in sorted(models)],'system_messages':systems}
-  assert set(entry)==FIELDS;assert all(x['role'] in ['user','assistant'] and isinstance(x['content'],str) for x in json.loads(entry['raw_state']));entries.append(entry)
+  assert set(entry)==FIELDS;assert all(x['role'] in ['user','assistant'] and (isinstance(x['content'],str) or x['role']=='assistant' and x['content'] is None) for x in json.loads(entry['raw_state']));entries.append(entry)
  with (out/'trajectory.jsonl').open('x') as f:
   for e in entries:f.write(json.dumps(e,ensure_ascii=False)+'\n')
  freeze(out/'tools.json',list(tools.values()));freeze(out/'metadata.json',{'format':'ControlArena directory writer field contract / OpenAI text message representation','reference_source':SOURCE,'native_inspect_eval':False,'native_controlarena_plugin_installed':False,'episodes':len(entries),'raw_calls':n,'model':'openai/gpt-oss-20b','unknown_rating_is_null':True})

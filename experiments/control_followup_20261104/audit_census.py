@@ -3,7 +3,7 @@ from experiments.control_study_202611.common import sha,file_sha,freeze,wire,MON
 from experiments.control_study_202611.monitors import post_action
 from .statistics import mean,cluster_effect
 CONDITIONS=['M0','M1','M2','M3','M2_PROSE']
-def audit(root,old):
+def audit(root,old,write=True):
  root,old=pathlib.Path(root),pathlib.Path(old);load=lambda p:json.loads(p.read_text());tasks={t['task_id']:t for t in load(old/'TASK_BANK.json')};episodes={r['episode_id']:r for p in (old/'episodes').glob('*.json') if (r:=load(p))['stage']=='main' and r['arm']=='B0'}
  expected={(eid,i,c) for eid,r in episodes.items() for i,e in enumerate(r['events']) if e['receipt']['proposal']['tool'] not in ['read','finish','escalate'] for c in CONDITIONS};seen=set();rows=[];api=out=new=0
  for p in sorted((root/'census_results').glob('*.json')):
@@ -28,6 +28,7 @@ def audit(root,old):
    other=indexed[r['episode_id'],r['event_index'],b];y=r['target_actual_unsafe_execution'];g[r['cluster']].append((r['verdict']['risk_probability']-y)**2-(other['verdict']['risk_probability']-y)**2)
   pairs[a+'-'+b]=cluster_effect(g)
  result=dict(pass_gate=True,rows=len(rows),unique_actions=len(rows)//5,old_rows=len(rows)-new,new_calls=new,new_api_tokens=api,new_output_tokens=out,summary=summary,paired_brier=pairs,estimand='retrospective census of V1 B0 actions; not new independent confirmation',human_review='SKIPPED_BY_USER')
- freeze(root/'INDEPENDENT_REPRODUCTION.json',result);return result
+ if write:freeze(root/'INDEPENDENT_REPRODUCTION.json',result)
+ return result
 if __name__=='__main__':
  import sys;print(json.dumps(audit(sys.argv[1],sys.argv[2]),indent=2))

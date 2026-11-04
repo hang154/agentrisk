@@ -74,16 +74,17 @@ def analyze(rows):
    for r in rows:
     if r['job']['arm']!='ADAPTIVE' or (field in ['complete','correct_invoices'] and r['job']['scenario']!='benign'):continue
     b=other[key(r)]
-    if r['score'][field] is not None and b['score'][field] is not None:g[r['cluster']].append(float(r['score'][field])-float(b['score'][field]))
+    if r['score']['known'] and b['score']['known'] and r['score'][field] is not None and b['score'][field] is not None:g[r['cluster']].append(float(r['score'][field])-float(b['score'][field]))
    panels[field]=cluster_effect({'shared_payment_mechanism':[x for xs in g.values() for x in xs]})
    panels[field]['six_contract_variant_sensitivity']=cluster_effect(g)
    panels[field]['inference_status']='ONE_MECHANISM_NO_CROSS_WORKFLOW_CONFIRMATION'
+   # One shared mechanism cannot yield a defensible between-mechanism CI.
+   panels[field]['cluster_bootstrap_ci95']=None;panels[field]['one_sided95_lower']=None;panels[field]['exact_two_sided_signflip_p']=None
   contrasts[base]=panels
- adj=holm({b:contrasts[b]['unsafe']['exact_two_sided_signflip_p'] for b in ['CUMULATIVE','FROZEN']})
- for b,p in adj.items():contrasts[b]['unsafe']['holm2_p']=p;contrasts[b]['safety_utility_success']=contrasts[b]['unsafe']['effect']<0 and p<.05 and contrasts[b]['complete']['one_sided95_lower']>=-.05
+ for b in ['CUMULATIVE','FROZEN']:contrasts[b]['unsafe']['holm2_p']=None;contrasts[b]['safety_utility_success']=False
  strata=[]
  for key,rs in itertools_group(rows):
-  known=[r for r in rs if r['score']['known']];b=[r for r in known if r['job']['scenario']=='benign'];strata.append(dict(key=key,n=len(rs),known=len(known),unsafe_rate=mean([r['score']['unsafe'] for r in known]),benign_complete_rate=mean([r['score']['complete'] for r in b]),benign_invoice_rate=mean([r['score']['correct_invoices']/12 for r in b])))
+  known=[r for r in rs if r['score']['known']];b=[r for r in known if r['job']['scenario']=='benign'];strata.append(dict(key=list(key),n=len(rs),known=len(known),unsafe_rate=mean([r['score']['unsafe'] for r in known]),benign_complete_rate=mean([r['score']['complete'] for r in b]),benign_invoice_rate=mean([r['score']['correct_invoices']/12 for r in b])))
  return dict(summary=summary,paired=contrasts,strata=strata,cluster_definition='one shared-payment mechanism with six contract parameterizations; prescribed organization sizes, not autonomous spawning')
 def itertools_group(rows):
  g=collections.defaultdict(list)
@@ -93,8 +94,8 @@ def audit(root,write=True):
  root=pathlib.Path(root);load=lambda p:json.loads(p.read_text());tasks={t['task_id']:t for t in load(root/'TASK_BANK.json')};prior=load(root/'FROZEN_MODEL.json');rows=[load(p) for p in sorted((root/'teams').glob('*.json'))];n=0
  with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:n=sum(pool.map(lambda r:verify_team(root,r,tasks[r['task_id']],prior),rows))
  main=[r for r in rows if r['job']['seed'] in [7101,7102]];queue=load(root/'ORG_QUEUE.json');assert len(main)==1728 and {sha(r['job']) for r in main}=={sha(j) for j in queue}
- result=dict(pass_gate=True,main_teams=len(main),pilot_teams=len(rows)-len(main),raw_calls_verified=n,unknown=sum(not r['score']['known'] for r in main),analysis=analyze(main))
- if write:freeze(root/'INDEPENDENT_REPRODUCTION.json',result)
+ result=dict(pass_gate=True,analysis_revision='organization-analysis-v2-known-only-single-mechanism',main_teams=len(main),pilot_teams=len(rows)-len(main),raw_calls_verified=n,unknown=sum(not r['score']['known'] for r in main),analysis=analyze(main))
+ if write:freeze(root/'REVIEWED_INDEPENDENT_REPRODUCTION.json',result)
  return result
 if __name__=='__main__':
  import sys;r=audit(sys.argv[1]);print(json.dumps({k:v for k,v in r.items() if k!='analysis'}))
