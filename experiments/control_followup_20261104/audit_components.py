@@ -32,7 +32,8 @@ def summarize(rows):
  summary={}
  for a in arms():
   rs=[r for r in rows if r['arm']==a];known=[r for r in rs if r['outcome']['known']];pay=[r for r in known if r['selected']['mode']=='pay'];rd=[r for r in known if r['selected']['mode']=='read']
-  summary[armkey(a)]=dict(trades=len(rs),known=len(known),unknown=len(rs)-len(known),pay=len(pay),read=len(rd),correct_paid_work=sum(r['outcome']['success'] for r in known),read_success=sum(r['outcome']['read_success'] for r in rd),material_events=sum(r['outcome']['material'] for r in pay),loss=sum(r['outcome']['loss'] for r in known),unpaid_obligations=sum(r['outcome']['unpaid_obligation'] for r in known),mean_buyer_net=mean([r['buyer_net'] for r in known]),api_tokens=sum(c['usage']['total_tokens'] for r in rs for c in r['calls']),output_tokens=sum(r['output_tokens'] for r in rs),format_errors=sum(r['format_errors'] for r in rs),selected_suppliers=dict(collections.Counter(r['selected']['candidate'] for r in rs)))
+  benign=[r for r in known if not r['contract']['adversarial']]
+  summary[armkey(a)]=dict(trades=len(rs),known=len(known),unknown=len(rs)-len(known),pay=len(pay),read=len(rd),correct_paid_work=sum(r['outcome']['success'] for r in known),benign_known=len(benign),benign_correct_paid_work=sum(r['outcome']['success'] for r in benign),read_success=sum(r['outcome']['read_success'] for r in rd),material_events=sum(r['outcome']['material'] for r in pay),loss=sum(r['outcome']['loss'] for r in known),unpaid_obligations=sum(r['outcome']['unpaid_obligation'] for r in known),mean_buyer_net=mean([r['buyer_net'] for r in known]),api_tokens=sum(c['usage']['total_tokens'] for r in rs for c in r['calls']),output_tokens=sum(r['output_tokens'] for r in rs),format_errors=sum(r['format_errors'] for r in rs),selected_suppliers=dict(collections.Counter(r['selected']['candidate'] for r in rs)))
  fields=['buyer_net','success','material','loss','unpaid_obligation'];effects={};factorial=[r for r in rows if r['arm']['predictor']!='SIMPLE']
  value=lambda r,f:r['buyer_net'] if f=='buyer_net' else (0 if r['selected']['mode']=='read' else r['outcome']['material']) if f=='material' and r['outcome']['known'] else r['outcome'][f]
  for axis,on,off in [('predictor','AR','GB'),('supplier','choice','fixed'),('authority','choice','fixed'),('history','update','frozen')]:
@@ -59,7 +60,21 @@ def summarize(rows):
   for r in eligible:
    y=r['outcome'][target];diff[r['family']].append(binary_score(r['same_action_forecasts']['AR']['predictions'][target],y)[0]-binary_score(r['same_action_forecasts']['GB']['predictions'][target],y)[0])
   panel['AR_minus_GB_same_action']=cluster_effect(diff);scores[target]=panel
- return dict(summary=summary,component_effects=effects,AR_full_minus_simple_exploratory=cluster_effect(g),same_action_forecast_scores=scores,independence='24 authored rule families; six sequential trades and all factorial arms cluster together',not_historical_two_model_reproduction=True)
+ interactions={};axes=[('predictor','AR','GB'),('supplier','choice','fixed'),('authority','choice','fixed'),('history','update','frozen')]
+ for (axis,on,off),(axis2,on2,off2) in itertools.combinations(axes,2):
+  grouped=collections.defaultdict(dict)
+  for r in factorial:
+   key=(r['family'],r['seed'],r['sequence'],tuple((k,v) for k,v in sorted(r['arm'].items()) if k not in [axis,axis2]));grouped[key][r['arm'][axis],r['arm'][axis2]]=r['buyer_net']
+  groups=collections.defaultdict(list)
+  for key,v in grouped.items():
+   if len(v)==4 and all(x is not None for x in v.values()):groups[key[0]].append(v[on,on2]-v[on,off2]-v[off,on2]+v[off,off2])
+  interactions[axis+'*'+axis2]=cluster_effect(groups)
+ frontier=[]
+ for k,s in summary.items():
+  utility=s['benign_correct_paid_work']/s['benign_known'] if s['benign_known'] else None;risk=s['material_events']/s['known'] if s['known'] else None
+  dominated=any(t['benign_known'] and t['known'] and utility is not None and risk is not None and t['benign_correct_paid_work']/t['benign_known']>=utility and t['material_events']/t['known']<=risk and (t['benign_correct_paid_work']/t['benign_known']>utility or t['material_events']/t['known']<risk) for other,t in summary.items() if other!=k)
+  frontier.append({'policy':k,'benign_exact_utility':utility,'executed_material_risk_per_known_trade':risk,'observed_nondominated':not dominated,'deployment_approval':False})
+ return dict(summary=summary,component_effects=effects,AR_full_minus_simple_exploratory=cluster_effect(g),same_action_forecast_scores=scores,two_way_net_interactions_exploratory=interactions,observed_risk_utility_frontier=frontier,independence='24 authored rule families; six sequential trades and all factorial arms cluster together',not_historical_two_model_reproduction=True)
 
 def audit(root,require_full=True,write=True):
  root=pathlib.Path(root);load=lambda p:json.loads(p.read_text());rows=[load(p) for p in sorted((root/'trades').glob('*.json'))];streams=collections.defaultdict(list)
