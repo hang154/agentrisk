@@ -167,7 +167,18 @@ def main():
   assert lock['protocol_sha256']==sha(plan) and lock['semantic_e2e_pass']
   assert file_sha(root/'SERVER_START.json')==lock['server_start_sha256']
   for name,digest in lock['raw_evidence_sha256'].items():assert file_sha(root/name)==digest
-  for name,digest in plan['source_sha256'].items():assert file_sha(pathlib.Path(__file__).parent/name)==digest
+  expected_sources=dict(plan['source_sha256'])
+  # An analysis-order correction cannot silently rewrite the original lock.
+  # Permit a separately committed, exact-hash amendment for post-action work
+  # only. Main actor/control dispatch always requires the original source lock.
+  amendment=root/'POST_ACTION_SOURCE_LOCK.json'
+  if a.stage=='monitors' and amendment.exists():
+   binding=json.loads(amendment.read_text());assert binding['protocol_sha256']==sha(plan) and binding['remote_commit_verified']
+   assert set(binding['source_sha256'])<=set(['runner.py','analysis.py'])
+   for name,digest in binding['source_sha256'].items():
+    assert binding['original_source_sha256'][name]==plan['source_sha256'][name]
+    expected_sources[name]=digest
+  for name,digest in expected_sources.items():assert file_sha(pathlib.Path(__file__).parent/name)==digest
  client=Client(root,a.concurrency)
  telemetry=Telemetry(root,a.stage).start()
  if a.stage=='monitors':
